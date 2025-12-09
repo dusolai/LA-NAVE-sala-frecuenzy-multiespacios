@@ -3,6 +3,7 @@ import CateringPartners from '../components/CateringPartners'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 import FloatingCTA from '../components/FloatingCTA'
+import ExtraServices from '../components/ExtraServices'
 import { Heart, Camera, Music, Utensils, Clock } from 'lucide-react'
 
 const benefits = [
@@ -108,6 +109,9 @@ export default function Bodas() {
           </div>
         </div>
       </section>
+
+      {/* Servicios Extra (Añadido) */}
+      <ExtraServices />
 
       <CateringPartners />
 
