@@ -36,8 +36,20 @@ const segments = [
 
 export default function HeroSegmentado() {
   return (
-    <section className="min-h-screen flex flex-col justify-center bg-industrial-50 pt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+    <section className="min-h-screen flex flex-col justify-center relative pt-20">
+      {/* IMAGEN DE FONDO AÑADIDA */}
+      <div className="absolute inset-0 z-0">
+        {/* Asegurate de guardar tu imagen como 'portada-lanave.webp' en la carpeta public */}
+        <img 
+          src="/portada-lanave.webp" 
+          alt="La Nave Espacio Industrial"
+          className="w-full h-full object-cover"
+        />
+        {/* Capa blanca semitransparente para que se lea el texto */}
+        <div className="absolute inset-0 bg-white/90"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative z-10">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-bold text-industrial-900 tracking-tight mb-6">
             LA NAVE
