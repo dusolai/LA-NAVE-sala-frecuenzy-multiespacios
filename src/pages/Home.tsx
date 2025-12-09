@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 import { Users, Maximize, Lightbulb, Car } from 'lucide-react'
 
 const features = [
-  { icon: Users, title: 'Hasta 400 invitados', description: 'Espacio diafano y versatil para grandes celebraciones' },
+  { icon: Users, title: 'Hasta 1100 invitados', description: 'Espacio diafano y versatil para grandes celebraciones' },
   { icon: Maximize, title: '1.200m2', description: 'Nave industrial completamente reformada' },
   { icon: Lightbulb, title: 'Iluminacion profesional', description: 'Sistema de luces LED programable' },
   { icon: Car, title: 'Parking privado', description: 'Amplio aparcamiento para todos tus invitados' },
