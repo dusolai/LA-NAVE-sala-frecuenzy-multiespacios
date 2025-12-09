@@ -3,6 +3,7 @@ import HeroSegmentado from '../components/HeroSegmentado'
 import CateringPartners from '../components/CateringPartners'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
+import ExtraServices from '../components/ExtraServices'
 import { Users, Maximize, Lightbulb, Car } from 'lucide-react'
 
 const features = [
@@ -70,6 +71,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Servicios Extra (Nuevo bloque añadido) */}
+      <ExtraServices />
 
       <CateringPartners />
 
