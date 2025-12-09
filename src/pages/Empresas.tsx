@@ -6,7 +6,7 @@ import { Briefcase, Wifi, Monitor, Users, Download, Check } from 'lucide-react'
 
 const specs = [
   { label: 'Superficie total', value: '1.200 m2' },
-  { label: 'Capacidad maxima', value: '400 personas' },
+  { label: 'Capacidad maxima', value: '1100 personas' },
   { label: 'Altura libre', value: '8 metros' },
   { label: 'Potencia electrica', value: '100 kW' },
 ]
