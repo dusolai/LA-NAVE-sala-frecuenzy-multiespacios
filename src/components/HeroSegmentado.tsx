@@ -36,32 +36,38 @@ const segments = [
 
 export default function HeroSegmentado() {
   return (
-    <section className="min-h-screen flex flex-col justify-center relative pt-20">
-      {/* IMAGEN DE FONDO AÑADIDA */}
+    <section className="min-h-screen flex flex-col justify-center relative pt-20 bg-industrial-50 overflow-hidden">
+      {/* IMAGEN DE FONDO */}
       <div className="absolute inset-0 z-0">
-        {/* Asegurate de guardar tu imagen como 'portada-lanave.webp' en la carpeta public */}
         <img 
           src="/portada-lanave.webp" 
           alt="La Nave Espacio Industrial"
           className="w-full h-full object-cover"
+          onError={(e) => {
+            // Si la imagen falla, ocultamos la etiqueta img para ver el color de fondo
+            e.currentTarget.style.display = 'none';
+            console.error("Error cargando la imagen de portada");
+          }}
         />
-        {/* Capa blanca semitransparente para que se lea el texto */}
-        <div className="absolute inset-0 bg-white/90"></div>
+        {/* Capa blanca semitransparente: Cambiado de 90 a 60 para que se vea la foto */}
+        <div className="absolute inset-0 bg-white/60"></div>
+        {/* Gradiente extra en la parte inferior para que el texto de abajo se lea bien */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/90"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative z-10">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold text-industrial-900 tracking-tight mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-industrial-900 tracking-tight mb-6 drop-shadow-sm">
             LA NAVE
           </h1>
-          <p className="text-xl md:text-2xl text-industrial-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-industrial-700 max-w-3xl mx-auto leading-relaxed font-medium">
             NO somos un salon de bodas clasico. Somos un espacio singular y moderno 
             donde tu tienes el control total.
           </p>
-          <div className="mt-6 flex items-center justify-center gap-2 text-sm text-industrial-500">
-            <span className="w-12 h-px bg-industrial-300"></span>
+          <div className="mt-6 flex items-center justify-center gap-2 text-sm text-industrial-600 font-semibold">
+            <span className="w-12 h-px bg-industrial-400"></span>
             <span>Cintruenigo, Navarra</span>
-            <span className="w-12 h-px bg-industrial-300"></span>
+            <span className="w-12 h-px bg-industrial-400"></span>
           </div>
         </div>
 
@@ -72,7 +78,7 @@ export default function HeroSegmentado() {
               <Link
                 key={segment.id}
                 to={segment.href}
-                className={`group relative overflow-hidden bg-white border-2 border-industrial-200 transition-all duration-500 ${segment.hoverColor} hover:shadow-2xl`}
+                className={`group relative overflow-hidden bg-white border-2 border-industrial-200 transition-all duration-500 ${segment.hoverColor} hover:shadow-2xl hover:-translate-y-1`}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${segment.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
                 
