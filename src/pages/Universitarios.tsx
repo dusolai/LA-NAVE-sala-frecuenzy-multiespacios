@@ -6,7 +6,7 @@ import { GraduationCap, Bus, Shield, Music, Users, Check, Star } from 'lucide-re
 
 const packages = [
   {
-    name: 'Paso de Ecuador',
+    name: 'Level Up Party: Subes de nivel. Dejas de ser novato.',
     price: 'Desde 35/persona',
     features: ['Espacio completo', 'DJ profesional', 'Iluminacion fiesta', 'Autobus incluido', 'Seguridad privada'],
     popular: true,
@@ -14,7 +14,7 @@ const packages = [
   {
     name: 'Fin de carrera',
     price: 'Desde 40/persona',
-    features: ['Todo del Paso de Ecuador', 'Catering basico', 'Photocall personalizado', 'Grabacion video'],
+    features: ['Level Up Party', 'Catering basico', 'Photocall personalizado', 'Grabacion video'],
     popular: false,
   },
 ]
@@ -52,7 +52,7 @@ export default function Universitarios() {
               Fiesta segura,<br />noche epica
             </h1>
             <p className="text-xl text-white/80 mb-8 leading-relaxed">
-              El mejor espacio para tu Paso de Ecuador o fin de carrera. 
+              El mejor espacio para tu Level Up Party o fin de carrera. 
               Con transporte incluido y seguridad garantizada.
             </p>
             
@@ -142,7 +142,7 @@ export default function Universitarios() {
           <h2 className="text-4xl font-bold mb-12">Lo que dicen de nosotros</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { uni: 'UPNA - Paso Ecuador 2024', text: 'Increible organizacion. El autobus fue clave.' },
+              { uni: 'UPNA - Level Up Party 2024', text: 'Increible organizacion. El autobus fue clave.' },
               { uni: 'UNIZAR - Fin de carrera', text: 'El mejor espacio para fiestas universitarias.' },
               { uni: 'UR - Medicina 2024', text: 'Seguridad top y musica hasta el amanecer.' },
             ].map((review, index) => (
