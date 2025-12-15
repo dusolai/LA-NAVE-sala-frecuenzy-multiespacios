@@ -2,34 +2,29 @@ import Navbar from '../components/Navbar'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 import FloatingCTA from '../components/FloatingCTA'
-import { Briefcase, Wifi, Monitor, Users, Download, Check } from 'lucide-react'
+import { Briefcase, Wifi, Monitor, Users, Check } from 'lucide-react'
 
 const specs = [
   { label: 'Superficie total', value: '1.200 m2' },
-  { label: 'Capacidad maxima', value: '1100 personas' },
+  { label: 'Capacidad máxima', value: '1100 personas' },
   { label: 'Altura libre', value: '8 metros' },
-  { label: 'Potencia electrica', value: '100 kW' },
+  { label: 'Potencia eléctrica', value: 'Industrial' },
 ]
 
 const features = [
-  { icon: Wifi, title: 'WiFi de alta velocidad', description: 'Fibra optica 1Gbps simetrico' },
+  { icon: Wifi, title: 'WiFi de alta velocidad', description: 'Fibra óptica 1Gbps simétrico' },
   { icon: Monitor, title: 'Equipamiento AV', description: 'Proyector 4K, pantalla LED, sonido profesional' },
-  { icon: Users, title: 'Configuraciones flexibles', description: 'Teatro, escuela, cabaret, cocktail' },
+  { icon: Users, title: 'Espacios Flexibles', description: 'Adaptable a cualquier formato de evento' },
 ]
 
 const clients = ['Empresa Tech', 'Consultora XYZ', 'Marca Premium', 'Startup Innovation', 'Grupo Industrial']
 
 export default function Empresas() {
-  const handleDownloadDossier = () => {
-    window.open('/dossier-tecnico-la-nave.html', '_blank')
-  }
-
   return (
     <div className="min-h-screen">
       <Navbar variant="corporate" />
       <FloatingCTA variant="corporate" />
 
-      {/* Hero with Real Image */}
       <section className="min-h-screen flex items-center relative pt-20">
         <div className="absolute inset-0 z-0">
           <img 
@@ -51,20 +46,13 @@ export default function Empresas() {
                 Eventos que<br />impactan
               </h1>
               <p className="text-xl text-industrial-300 mb-8 leading-relaxed">
-                Un espacio diafano con tecnologia de ultima generacion. 
+                Un espacio diáfano con tecnología de última generación. 
                 Perfecto para presentaciones, team buildings, y eventos de marca.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="#contacto" className="px-8 py-4 bg-white text-industrial-900 font-medium hover:bg-steel-light transition-colors">
                   Solicitar presupuesto
                 </a>
-                <button 
-                  onClick={handleDownloadDossier}
-                  className="flex items-center gap-2 px-8 py-4 border-2 border-industrial-400 text-white font-medium hover:border-white transition-colors"
-                >
-                  <Download size={18} />
-                  Dossier tecnico
-                </button>
               </div>
             </div>
           </div>
@@ -75,7 +63,7 @@ export default function Empresas() {
       <section id="specs" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-industrial-900 mb-4">Datos tecnicos</h2>
+            <h2 className="text-4xl font-bold text-industrial-900 mb-4">Datos técnicos</h2>
             <p className="text-industrial-600">Todo lo que necesitas saber para planificar tu evento</p>
           </div>
 
@@ -103,30 +91,21 @@ export default function Empresas() {
         </div>
       </section>
 
-      {/* Configurations */}
+      {/* Configuración genérica (sin grids específicos) */}
       <section className="py-24 bg-industrial-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-industrial-900 mb-12 text-center">Configuraciones disponibles</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { name: 'Teatro', capacity: '400 pax' },
-              { name: 'Escuela', capacity: '200 pax' },
-              { name: 'Cabaret', capacity: '250 pax' },
-              { name: 'Cocktail', capacity: '500 pax' },
-            ].map((config, index) => (
-              <div key={index} className="p-6 bg-white border-2 border-industrial-200">
-                <h3 className="text-lg font-semibold text-industrial-900 mb-1">{config.name}</h3>
-                <p className="text-industrial-500">{config.capacity}</p>
-              </div>
-            ))}
-          </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-industrial-900 mb-6">Configuraciones a medida</h2>
+          <p className="text-xl text-industrial-600 max-w-3xl mx-auto">
+            Olvídate de formatos rígidos. Adaptamos el espacio totalmente a tus necesidades, 
+            ya sea para una conferencia multitudinaria, una cena de gala o un showroom exclusivo.
+          </p>
         </div>
       </section>
 
       {/* Trust */}
       <section className="py-24 bg-industrial-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-12">Confian en nosotros</h2>
+          <h2 className="text-3xl font-bold text-white mb-12">Confían en nosotros</h2>
           <div className="flex flex-wrap justify-center gap-8">
             {clients.map((client, index) => (
               <div key={index} className="px-8 py-4 bg-industrial-800 text-industrial-400">{client}</div>
@@ -141,11 +120,11 @@ export default function Empresas() {
           <h2 className="text-4xl font-bold text-industrial-900 mb-12 text-center">Incluido en el alquiler</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              'Mobiliario basico (mesas y sillas)',
+              'Mobiliario básico (mesas y sillas)',
               'Sistema de sonido profesional',
               'Proyector 4K y pantalla',
               'WiFi alta velocidad',
-              'Iluminacion ambiental LED',
+              'Iluminación ambiental LED',
               'Parking privado',
               'Camerino y zona backstage',
               'Coordinador de evento',
