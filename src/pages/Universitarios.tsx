@@ -2,27 +2,27 @@ import Navbar from '../components/Navbar'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 import FloatingCTA from '../components/FloatingCTA'
-import { GraduationCap, Bus, Shield, Music, Users, Check, Star } from 'lucide-react'
+import { GraduationCap, Bus, Shield, Music, Check, Star, Clock, Beer, Crown } from 'lucide-react'
 
 const packages = [
   {
-    name: 'Level Up Party: Subes de nivel. Dejas de ser novato.',
-    price: 'Desde 35/persona',
-    features: ['Espacio completo', 'DJ profesional', 'Iluminacion fiesta', 'Autobus incluido', 'Seguridad privada'],
+    name: 'Level Up Party',
+    description: 'Subes de nivel. Dejas de ser novato.',
+    features: ['Espacio completo Sala Frequency', 'DJ profesional', 'Iluminación fiesta', 'Servicio de Autobús', 'Seguridad privada'],
     popular: true,
   },
   {
     name: 'Fin de carrera',
-    price: 'Desde 40/persona',
-    features: ['Level Up Party', 'Catering basico', 'Photocall personalizado', 'Grabacion video'],
+    description: 'La despedida que os merecéis.',
+    features: ['Level Up Party included', 'Catering/Cena', 'Photocall personalizado', 'Grabación video', 'Acceso Zona VIP'],
     popular: false,
   },
 ]
 
 const safetyFeatures = [
   { icon: Shield, title: 'Seguridad 24h', description: 'Personal de seguridad profesional toda la noche' },
-  { icon: Bus, title: 'Transporte incluido', description: 'Autobuses ida y vuelta desde tu universidad' },
-  { icon: Users, title: 'Control de aforo', description: 'Capacidad controlada para tu seguridad' },
+  { icon: Bus, title: 'Transporte', description: 'Servicio de autobús ida y vuelta para tu seguridad' },
+  { icon: Clock, title: 'Horario Extendido', description: 'Fiesta permitida hasta las 7:00 AM' },
 ]
 
 export default function Universitarios() {
@@ -31,7 +31,6 @@ export default function Universitarios() {
       <Navbar variant="university" />
       <FloatingCTA variant="university" />
 
-      {/* Hero with Real Image */}
       <section className="min-h-screen flex items-center relative pt-20">
         <div className="absolute inset-0 z-0">
           <img 
@@ -49,41 +48,68 @@ export default function Universitarios() {
               <span className="text-sm font-medium uppercase tracking-wider">Fiestas Universitarias</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Fiesta segura,<br />noche epica
+              SALA FREQUENCY<br />MULTIESPACIOS
             </h1>
             <p className="text-xl text-white/80 mb-8 leading-relaxed">
               El mejor espacio para tu Level Up Party o fin de carrera. 
-              Con transporte incluido y seguridad garantizada.
+              Hasta el amanecer, con la mejor música y seguridad garantizada.
             </p>
             
             <div className="flex flex-wrap gap-6 mb-8">
               <div className="flex items-center gap-2 text-white">
-                <Bus className="w-6 h-6" />
-                <span className="font-medium">Autobus incluido</span>
+                <Clock className="w-6 h-6" />
+                <span className="font-medium">Hasta las 7:00 AM</span>
               </div>
               <div className="flex items-center gap-2 text-white">
-                <Shield className="w-6 h-6" />
-                <span className="font-medium">Seguridad 24h</span>
+                <Beer className="w-6 h-6" />
+                <span className="font-medium">3 Barras</span>
               </div>
               <div className="flex items-center gap-2 text-white">
-                <Music className="w-6 h-6" />
-                <span className="font-medium">DJ profesional</span>
+                <Crown className="w-6 h-6" />
+                <span className="font-medium">Zona VIP</span>
               </div>
             </div>
 
             <a href="#paquetes" className="inline-block px-8 py-4 bg-white text-university font-medium hover:bg-industrial-100 transition-colors">
-              Ver paquetes
+              Ver opciones
             </a>
           </div>
         </div>
       </section>
 
-      {/* Safety */}
+      {/* Highlights Section */}
+      <section className="py-16 bg-industrial-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+              <div className="p-4">
+                 <Music className="w-10 h-10 mx-auto mb-4 text-university" />
+                 <h3 className="font-bold text-lg mb-2">Cabina DJ Ampliada</h3>
+                 <p className="text-gray-400 text-sm">Sonido brutal y espacio para el show</p>
+              </div>
+              <div className="p-4">
+                 <Beer className="w-10 h-10 mx-auto mb-4 text-university" />
+                 <h3 className="font-bold text-lg mb-2">3 Barras</h3>
+                 <p className="text-gray-400 text-sm">Servicio rápido con camareros profesionales</p>
+              </div>
+              <div className="p-4">
+                 <Crown className="w-10 h-10 mx-auto mb-4 text-university" />
+                 <h3 className="font-bold text-lg mb-2">Zona VIP Superior</h3>
+                 <p className="text-gray-400 text-sm">Espacio exclusivo separado de la pista</p>
+              </div>
+              <div className="p-4">
+                 <Clock className="w-10 h-10 mx-auto mb-4 text-university" />
+                 <h3 className="font-bold text-lg mb-2">Cierre 7:00 AM</h3>
+                 <p className="text-gray-400 text-sm">La noche es joven y larga</p>
+              </div>
+           </div>
+        </div>
+      </section>
+
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-industrial-900 mb-4">Tu seguridad es lo primero</h2>
-            <p className="text-industrial-600 text-lg">Nos tomamos en serio que pases una noche increible y vuelvas a casa sano y salvo</p>
+            <p className="text-industrial-600 text-lg">Nos tomamos en serio que pases una noche increíble y vuelvas a casa sano y salvo</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -114,12 +140,12 @@ export default function Universitarios() {
               <div key={index} className={`relative p-8 bg-white border-2 ${pkg.popular ? 'border-university' : 'border-industrial-200'}`}>
                 {pkg.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-university text-white text-xs font-medium uppercase">
-                    Mas popular
+                    Más popular
                   </div>
                 )}
                 <h3 className="text-2xl font-bold text-industrial-900 mb-2">{pkg.name}</h3>
-                <p className="text-3xl font-bold text-university mb-6">{pkg.price}</p>
-                <ul className="space-y-3">
+                <p className="text-lg text-industrial-500 mb-6 italic">{pkg.description}</p>
+                <ul className="space-y-3 mb-8">
                   {pkg.features.map((feature, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <Check className="w-5 h-5 text-university" />
@@ -127,33 +153,12 @@ export default function Universitarios() {
                     </li>
                   ))}
                 </ul>
-                <a href="#contacto" className={`mt-8 block text-center py-3 font-medium transition-colors ${pkg.popular ? 'bg-university text-white hover:bg-indigo-700' : 'border-2 border-industrial-300 text-industrial-700 hover:border-university'}`}>
-                  Solicitar info
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Reviews */}
-      <section className="py-24 bg-university text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-12">Lo que dicen de nosotros</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { uni: 'UPNA - Level Up Party 2024', text: 'Increible organizacion. El autobus fue clave.' },
-              { uni: 'UNIZAR - Fin de carrera', text: 'El mejor espacio para fiestas universitarias.' },
-              { uni: 'UR - Medicina 2024', text: 'Seguridad top y musica hasta el amanecer.' },
-            ].map((review, index) => (
-              <div key={index} className="p-6 bg-white/10 backdrop-blur-sm">
-                <div className="flex justify-center gap-1 mb-4">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-current" />
-                  ))}
+                <div className="text-center">
+                    <span className="block text-xl font-bold text-university mb-4">Precios especiales para grupos</span>
+                    <a href="#contacto" className={`block w-full py-3 font-medium transition-colors ${pkg.popular ? 'bg-university text-white hover:bg-indigo-700' : 'border-2 border-industrial-300 text-industrial-700 hover:border-university'}`}>
+                    Consultar disponibilidad
+                    </a>
                 </div>
-                <p className="text-white/90 mb-4">"{review.text}"</p>
-                <p className="text-sm text-white/60">{review.uni}</p>
               </div>
             ))}
           </div>
