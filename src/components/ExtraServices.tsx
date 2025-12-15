@@ -6,35 +6,40 @@ import {
   Car, 
   Bus, 
   Bed, 
-  Camera, 
   Utensils, 
   Sparkles,
-  PartyPopper
+  PartyPopper,
+  Flower,
+  ClipboardList
 } from 'lucide-react'
+
+const BullIcon = Smile; // Fallback icon
 
 const services = [
   {
-    category: "Tecnología & Recuerdos",
+    category: "Organización & Detalles",
     items: [
-      { icon: Video, title: "Video 3D y Decoraciones", desc: "Proyecciones y mapping para transformar el espacio." },
-      { icon: Mail, title: "Invitaciones Digitales", desc: "Diseño y gestión de envíos para tus invitados." },
-      { icon: Camera, title: "Foto y Vídeo", desc: "Fotógrafos profesionales y generación de vídeo post-evento." }
+      { icon: ClipboardList, title: "Wedding Planner", desc: "Servicio integral para que no te preocupes de nada." },
+      { icon: Flower, title: "Floristería", desc: "Decoración floral personalizada para tu evento." },
+      { icon: Mail, title: "Invitaciones", desc: "Digitales o impresas a medida." }
     ]
   },
   {
-    category: "Logística & Confort",
+    category: "Logística & Alojamiento",
     items: [
-      { icon: Bus, title: "Convenio Autobuses", desc: "Transporte seguro para que nadie coja el coche." },
-      { icon: Bed, title: "Convenio Hoteles", desc: "Alojamiento cercano con tarifas especiales." },
-      { icon: Car, title: "Coche con Chófer", desc: "Llegada espectacular para los novios o VIPs." }
+      { icon: Bus, title: "Servicio de Transporte", desc: "Autobuses para invitados. Seguridad ante todo." },
+      { icon: Bed, title: "Alojamiento", desc: "Hoteles cercanos con tarifas especiales." },
+      { icon: Car, title: "Coche con Chófer", desc: "Llegada espectacular para novios o VIPs." }
     ]
   },
   {
     category: "Fiesta & Entretenimiento",
     items: [
-      { icon: Music, title: "DJ Profesional", desc: "El ritmo que tu fiesta necesita." },
-      { icon: Smile, title: "Zona Kids", desc: "Castillo de bolas, payasos y educadores para los peques." },
-      { icon: Utensils, title: "Catering a Medida", desc: "Desde córners temáticos hasta banquetes completos." }
+      { icon: BullIcon, title: "Capeas y Animales", desc: "Entretenimiento tradicional y exhibiciones." },
+      { icon: Smile, title: "Zona Kids", desc: "Castillo hinchable y animadores." },
+      { icon: Video, title: "Audiovisuales 3D", desc: "Proyecciones y mapping." },
+      { icon: Utensils, title: "Catering a Medida", desc: "Tú eliges el menú." },
+      { icon: Music, title: "DJ & Música", desc: "Cabina profesional y sonido." }
     ]
   }
 ]
@@ -77,7 +82,6 @@ export default function ExtraServices() {
           ))}
         </div>
 
-        {/* Sección para Eventos Privados / General */}
         <div className="mt-16 bg-industrial-900 rounded-lg p-8 md:p-12 text-center text-white relative overflow-hidden">
           <div className="relative z-10">
             <Sparkles className="w-12 h-12 text-copper mx-auto mb-6" />
@@ -94,10 +98,8 @@ export default function ExtraServices() {
               Personalizar mi evento
             </a>
           </div>
-          {/* Decorative background element */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-copper/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
         </div>
-
       </div>
     </section>
   )
