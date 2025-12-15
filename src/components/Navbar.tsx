@@ -21,6 +21,7 @@ export default function Navbar({ variant = 'default' }: NavbarProps) {
   const styles = variantStyles[variant]
 
   const links = [
+    { href: '/#conocenos', label: 'Conócenos' },
     { href: '/bodas', label: 'Bodas' },
     { href: '/empresas', label: 'Empresas' },
     { href: '/universitarios', label: 'Universitarios' },
@@ -76,6 +77,13 @@ export default function Navbar({ variant = 'default' }: NavbarProps) {
                 {link.label}
               </Link>
             ))}
+            <Link
+                to="/#contacto"
+                onClick={() => setIsOpen(false)}
+                className={`block text-lg font-medium ${styles.text}`}
+              >
+                Contacto
+            </Link>
           </div>
         </div>
       )}
