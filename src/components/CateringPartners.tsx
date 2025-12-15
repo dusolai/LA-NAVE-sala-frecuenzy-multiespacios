@@ -1,7 +1,6 @@
 const partners = [
-  { name: 'Maher Catering', specialty: 'Alta gastronomia' },
+  { name: 'Maher Catering', specialty: 'Alta gastronomía' },
   { name: 'Gourmet Ribera', specialty: 'Cocina de autor' },
-  { name: 'Delicias del Ebro', specialty: 'Tradicion navarra' },
   { name: 'Sabores de la Tierra', specialty: 'Km 0' },
   { name: 'Eventos y Sabores', specialty: 'Internacional' },
   { name: 'Tu propio catering', specialty: 'Libertad total' },
@@ -17,7 +16,7 @@ export default function CateringPartners() {
           </h2>
           <p className="text-xl text-industrial-600 max-w-2xl mx-auto">
             Elige entre nuestros caterings homologados o trae el tuyo propio. 
-            Aqui no hay ataduras, solo libertad.
+            Aquí no hay ataduras, solo libertad.
           </p>
         </div>
 
@@ -42,7 +41,7 @@ export default function CateringPartners() {
 
         <div className="mt-12 text-center">
           <p className="text-industrial-500 italic">
-            Partners, no obligacion. La decision es siempre tuya.
+            Partners, no obligación. La decisión es siempre tuya.
           </p>
         </div>
       </div>
