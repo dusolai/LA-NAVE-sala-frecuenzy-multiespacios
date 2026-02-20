@@ -13,14 +13,12 @@ const features = [
   { icon: Car, title: 'Parking privado', description: 'Amplio aparcamiento para todos tus invitados' },
 ]
 
-// Galería: 3 de la Nave (estructura/exterior) y 3 de la Sala (interior/evento)
+// Galería: 4 imágenes conceptuales del espacio
 const galleryImages = [
-  { src: '/images/venue_exterior_1_9.jpeg', alt: 'Fachada La Nave' },
+  { src: '/images/venue_exterior_1_9.jpeg', alt: 'Fachada Sala Frecuenzy' },
   { src: '/images/industrial_space_1_9.jpeg', alt: 'Espacio Industrial' },
-  { src: '/images/wedding_venue_1_5.jpeg', alt: 'Detalle Arquitectónico' },
-  { src: '/images/corporate_event_1_3.jpeg', alt: 'Interior Sala Eventos' },
-  { src: '/images/wedding_setup_1_0.jpg', alt: 'Montaje Celebración' },
-  { src: '/images/university_party_1_6.jpg', alt: 'Ambiente Fiesta' },
+  { src: '/images/wedding_venue_1_5.jpeg', alt: 'Interior Sala Eventos' },
+  { src: '/images/corporate_event_1_3.jpeg', alt: 'Detalle Arquitectonico' },
 ]
 
 export default function Home() {
@@ -36,7 +34,7 @@ export default function Home() {
              <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                <img 
                   src="/images/venue_exterior_1_9.jpeg" 
-                  alt="Fachada La Nave Frequency" 
+                   alt="Fachada Sala Frecuenzy Multiespacios"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                />
              </div>
@@ -94,17 +92,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery */}
-      <section className="py-24 bg-industrial-900">
+      {/* Gallery - Nueva sección con 4 imágenes conceptuales */}
+      <section className="py-24 bg-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center">Nuestro espacio</h2>
-          <div className="grid md:grid-cols-3 gap-4">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">Descubre nuestros espacios</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {galleryImages.map((img, index) => (
-              <div key={index} className="aspect-[4/3] overflow-hidden group">
+              <div key={index} className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg group hover:shadow-2xl transition-all duration-500">
                 <img 
                   src={img.src} 
                   alt={img.alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
             ))}
@@ -137,7 +135,7 @@ export default function Home() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23534.89!2d-1.8!3d42.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5086f0c0c0c0c0%3A0x0!2sCintru%C3%A9nigo%2C%20Navarra!5e0!3m2!1ses!2ses!4v1"
                 width="100%" height="100%" style={{ border: 0 }}
                 allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicacion La Nave"
+                title="Ubicacion Sala Frecuenzy"
               ></iframe>
             </div>
           </div>

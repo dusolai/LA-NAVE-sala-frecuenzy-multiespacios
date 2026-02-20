@@ -7,9 +7,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
-            <h3 className="text-3xl font-bold mb-4">LA NAVE</h3>
+            <h3 className="text-3xl font-bold mb-4">SALA FRECUENZY</h3>
             <p className="text-industrial-300 mb-6 max-w-md">
-              Un espacio industrial singular en el corazon de la Ribera Navarra. 
+              Un espacio multiespacios singular en el corazon de la Ribera Navarra. 
               Donde la libertad y el estilo se encuentran.
             </p>
             <div className="flex gap-4">
@@ -41,14 +41,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-copper" />
-                <span>info@lanave.es</span>
+                <span>info@salafrecuenzy.es</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-industrial-800 mt-12 pt-8 text-center text-industrial-500 text-sm">
-          <p>2025 La Nave. Todos los derechos reservados.</p>
+          <p>2025 Sala Frecuenzy. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

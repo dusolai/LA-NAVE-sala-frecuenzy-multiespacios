@@ -30,7 +30,7 @@ export default function ContactForm({ segment = 'general' }: ContactFormProps) {
     
     await new Promise(resolve => setTimeout(resolve, 800))
     
-    const subject = encodeURIComponent(`Consulta ${segmentLabels[segment]} - La Nave`)
+    const subject = encodeURIComponent(`Consulta ${segmentLabels[segment]} - Sala Frecuenzy`)
     const body = encodeURIComponent(
       `Nombre: ${formData.name}\n` +
       `Email: ${formData.email}\n` +
@@ -40,14 +40,14 @@ export default function ContactForm({ segment = 'general' }: ContactFormProps) {
       `Mensaje: ${formData.message}`
     )
     
-    const submissions = JSON.parse(localStorage.getItem('lanave_submissions') || '[]')
+    const submissions = JSON.parse(localStorage.getItem('salafrecuenzy_submissions') || '[]')
     submissions.push({ ...formData, segment, timestamp: new Date().toISOString() })
-    localStorage.setItem('lanave_submissions', JSON.stringify(submissions))
+    localStorage.setItem('salafrecuenzy_submissions', JSON.stringify(submissions))
     
     setLoading(false)
     setSubmitted(true)
     
-    window.open(`mailto:info@lanave.es?subject=${subject}&body=${body}`, '_blank')
+    window.open(`mailto:info@salafrecuenzy.es?subject=${subject}&body=${body}`, '_blank')
   }
 
   if (submitted) {

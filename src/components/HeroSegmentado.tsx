@@ -36,38 +36,23 @@ const segments = [
 
 export default function HeroSegmentado() {
   return (
-    <section className="min-h-screen flex flex-col justify-center relative pt-20 bg-industrial-50 overflow-hidden">
-      {/* IMAGEN DE FONDO */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/portada-lanave.webp" 
-          alt="La Nave Espacio Industrial"
-          className="w-full h-full object-cover"
-          onError={(e) => {
-            // Si la imagen falla, ocultamos la etiqueta img para ver el color de fondo
-            e.currentTarget.style.display = 'none';
-            console.error("Error cargando la imagen de portada");
-          }}
-        />
-        {/* Capa blanca semitransparente: Cambiado de 90 a 60 para que se vea la foto */}
-        <div className="absolute inset-0 bg-white/60"></div>
-        {/* Gradiente extra en la parte inferior para que el texto de abajo se lea bien */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/90"></div>
-      </div>
+    <section className="min-h-screen flex flex-col justify-center relative pt-20 bg-gray-950 overflow-hidden">
+      {/* FONDO SÓLIDO OSCURO */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative z-10">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold text-industrial-900 tracking-tight mb-6 drop-shadow-sm">
-            LA NAVE
+          <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight mb-6 drop-shadow-sm">
+            SALA FRECUENZY
           </h1>
-          <p className="text-xl md:text-2xl text-industrial-700 max-w-3xl mx-auto leading-relaxed font-medium">
-            NO somos un salon de bodas clasico. Somos un espacio singular y moderno 
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-medium">
+            MULTIESPACIOS - No somos un salon de bodas clasico. Somos un espacio singular y moderno 
             donde tu tienes el control total.
           </p>
-          <div className="mt-6 flex items-center justify-center gap-2 text-sm text-industrial-600 font-semibold">
-            <span className="w-12 h-px bg-industrial-400"></span>
+          <div className="mt-6 flex items-center justify-center gap-2 text-sm text-gray-400 font-semibold">
+            <span className="w-12 h-px bg-gray-600"></span>
             <span>Cintruenigo, Navarra</span>
-            <span className="w-12 h-px bg-industrial-400"></span>
+            <span className="w-12 h-px bg-gray-600"></span>
           </div>
         </div>
 
