@@ -36,7 +36,7 @@ export default function HeroSegmentado() {
             SALA FRECUENZY
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-medium">
-            MULTIESPACIOS - No somos un salon de bodas clasico. Somos un espacio singular y moderno 
+            MULTIESPACIOS - No somos un salon de bodas clasico. Somos un espacio singular y moderno
             donde tu tienes el control total.
           </p>
           <div className="mt-6 flex items-center justify-center gap-2 text-sm text-gray-400 font-semibold">
@@ -46,7 +46,8 @@ export default function HeroSegmentado() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
+
           {segments.map((segment) => {
             const Icon = segment.icon
             return (
@@ -56,13 +57,13 @@ export default function HeroSegmentado() {
                 className={`group relative overflow-hidden bg-white border-2 border-industrial-200 transition-all duration-500 ${segment.hoverColor} hover:shadow-2xl hover:-translate-y-1`}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${segment.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
-                
+
                 <div className="relative p-8 lg:p-10 min-h-[320px] flex flex-col justify-between">
                   <div>
                     <div className="w-14 h-14 flex items-center justify-center border-2 border-industrial-200 group-hover:border-white/50 transition-colors mb-6">
                       <Icon className="w-7 h-7 text-industrial-600 group-hover:text-white transition-colors" />
                     </div>
-                    
+
                     <h2 className="text-2xl lg:text-3xl font-bold text-industrial-900 group-hover:text-white transition-colors mb-2">
                       {segment.title}
                     </h2>
