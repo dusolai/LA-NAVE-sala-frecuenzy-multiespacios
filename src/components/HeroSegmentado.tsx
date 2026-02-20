@@ -9,7 +9,8 @@ const segments = [
     description: 'Libertad total de catering en un espacio industrial unico',
     href: '/bodas',
     icon: Heart,
-    gradient: 'from-wedding/90 to-copper/80',
+    image: 'https://images.unsplash.com/photo-1519225421980-715bd0215aed?auto=format&fit=crop&q=80&w=800',
+    gradient: 'from-wedding/95 to-copper/90',
     hoverColor: 'hover:border-wedding',
   },
   {
@@ -19,7 +20,8 @@ const segments = [
     description: 'Tecnologia avanzada y espacios diafanos para tu marca',
     href: '/empresas',
     icon: Briefcase,
-    gradient: 'from-industrial-800/90 to-steel-dark/80',
+    image: 'https://images.unsplash.com/photo-1505373633519-79633f60704b?auto=format&fit=crop&q=80&w=800',
+    gradient: 'from-industrial-800/95 to-steel-dark/90',
     hoverColor: 'hover:border-corporate',
   },
 ]
@@ -54,11 +56,16 @@ export default function HeroSegmentado() {
               <Link
                 key={segment.id}
                 to={segment.href}
-                className={`group relative overflow-hidden bg-white border-2 border-industrial-200 transition-all duration-500 ${segment.hoverColor} hover:shadow-2xl hover:-translate-y-1`}
+                className={`group relative overflow-hidden bg-industrial-900 border-2 border-industrial-200 transition-all duration-500 ${segment.hoverColor} hover:shadow-2xl hover:-translate-y-1`}
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${segment.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+                {/* BACKGROUND IMAGE */}
+                <div className="absolute inset-0 z-0">
+                  <img src={segment.image} alt={segment.title} className="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500 group-hover:scale-110" />
+                </div>
 
-                <div className="relative p-8 lg:p-10 min-h-[320px] flex flex-col justify-between">
+                <div className={`absolute inset-0 bg-gradient-to-br ${segment.gradient} opacity-60 group-hover:opacity-40 transition-opacity duration-500 z-10`}></div>
+
+                <div className="relative p-8 lg:p-10 min-h-[320px] flex flex-col justify-between z-20">
                   <div>
                     <div className="w-14 h-14 flex items-center justify-center border-2 border-industrial-200 group-hover:border-white/50 transition-colors mb-6">
                       <Icon className="w-7 h-7 text-industrial-600 group-hover:text-white transition-colors" />

@@ -19,12 +19,12 @@ const testimonials = [
 ]
 
 const galleryImages = [
-  '/images/wedding_venue_1_5.jpeg',
-  '/images/wedding_setup_1_0.jpg',
-  '/images/industrial_space_1_9.jpeg',
-  '/images/venue_exterior_1_9.jpeg',
-  '/images/corporate_event_1_3.jpeg',
-  '/images/wedding_venue_1_5.jpeg',
+  'https://images.unsplash.com/photo-1519225421980-715bd0215aed?auto=format&fit=crop&q=80&w=1200',
+  'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=1200',
+  'https://images.unsplash.com/photo-1558444479-c8a027920927?auto=format&fit=crop&q=80&w=1200',
+  'https://images.unsplash.com/photo-1518005020250-68594931bc97?auto=format&fit=crop&q=80&w=1200',
+  'https://images.unsplash.com/photo-1505373633519-79633f60704b?auto=format&fit=crop&q=80&w=1200',
+  'https://images.unsplash.com/photo-1519225421980-715bd0215aed?auto=format&fit=crop&q=80&w=1200',
 ]
 
 export default function Bodas() {
@@ -36,14 +36,14 @@ export default function Bodas() {
       {/* Hero with Real Image */}
       <section className="min-h-screen flex items-center relative pt-20">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/wedding_venue_1_5.jpeg" 
+          <img
+            src="https://images.unsplash.com/photo-1519225421980-715bd0215aed?auto=format&fit=crop&q=80&w=1920"
             alt="Espacio industrial para bodas"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
           <div className="max-w-xl">
             <div className="flex items-center gap-2 text-wedding mb-4">
@@ -54,7 +54,7 @@ export default function Bodas() {
               Tu dia,<br />tus reglas
             </h1>
             <p className="text-xl text-industrial-600 mb-8 leading-relaxed">
-              Un espacio industrial-chic donde la libertad es protagonista. 
+              Un espacio industrial-chic donde la libertad es protagonista.
               Sin ataduras de catering, sin horarios rigidos. Solo tu vision hecha realidad.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -99,8 +99,8 @@ export default function Bodas() {
           <div className="grid md:grid-cols-3 gap-4">
             {galleryImages.map((src, i) => (
               <div key={i} className="aspect-square overflow-hidden group">
-                <img 
-                  src={src} 
+                <img
+                  src={src}
                   alt={`Galeria boda ${i + 1}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />

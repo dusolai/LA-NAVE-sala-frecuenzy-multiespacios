@@ -27,14 +27,14 @@ export default function Empresas() {
 
       <section className="min-h-screen flex items-center relative pt-20">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/corporate_event_1_3.jpeg" 
+          <img
+            src="https://images.unsplash.com/photo-1505373633519-79633f60704b?auto=format&fit=crop&q=80&w=1920"
             alt="Evento corporativo"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-industrial-900/85"></div>
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -46,7 +46,7 @@ export default function Empresas() {
                 Eventos que<br />impactan
               </h1>
               <p className="text-xl text-industrial-300 mb-8 leading-relaxed">
-                Un espacio diáfano con tecnología de última generación. 
+                Un espacio diáfano con tecnología de última generación.
                 Perfecto para presentaciones, team buildings, y eventos de marca.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -96,7 +96,7 @@ export default function Empresas() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-industrial-900 mb-6">Configuraciones a medida</h2>
           <p className="text-xl text-industrial-600 max-w-3xl mx-auto">
-            Olvídate de formatos rígidos. Adaptamos el espacio totalmente a tus necesidades, 
+            Olvídate de formatos rígidos. Adaptamos el espacio totalmente a tus necesidades,
             ya sea para una conferencia multitudinaria, una cena de gala o un showroom exclusivo.
           </p>
         </div>

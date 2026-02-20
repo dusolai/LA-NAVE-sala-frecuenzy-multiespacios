@@ -13,12 +13,12 @@ const features = [
   { icon: Car, title: 'Parking privado', description: 'Amplio aparcamiento para todos tus invitados' },
 ]
 
-// Galería: 4 imágenes conceptuales del espacio
+// Galería: Imágenes premium de Unsplash
 const galleryImages = [
-  { src: '/images/venue_exterior_1_9.jpeg', alt: 'Fachada Sala Frecuenzy' },
-  { src: '/images/industrial_space_1_9.jpeg', alt: 'Espacio Industrial' },
-  { src: '/images/wedding_venue_1_5.jpeg', alt: 'Interior Sala Eventos' },
-  { src: '/images/corporate_event_1_3.jpeg', alt: 'Detalle Arquitectonico' },
+  { src: 'https://images.unsplash.com/photo-1518005020250-68594931bc97?auto=format&fit=crop&q=80&w=1200', alt: 'Fachada Sala Frecuenzy' },
+  { src: 'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=1200', alt: 'Espacio Industrial' },
+  { src: 'https://images.unsplash.com/photo-1519225421980-715bd0215aed?auto=format&fit=crop&q=80&w=1200', alt: 'Interior Sala Eventos' },
+  { src: 'https://images.unsplash.com/photo-1558444479-c8a027920927?auto=format&fit=crop&q=80&w=1200', alt: 'Detalle Arquitectonico' },
 ]
 
 export default function Home() {
@@ -31,34 +31,34 @@ export default function Home() {
       <section id="conocenos" className="py-24 bg-industrial-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-             <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
-               <img 
-                  src="/images/venue_exterior_1_9.jpeg" 
-                   alt="Fachada Sala Frecuenzy Multiespacios"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-               />
-             </div>
-             <div>
-               <div className="flex items-center gap-2 text-copper mb-4">
-                 <span className="w-12 h-px bg-copper"></span>
-                 <span className="text-sm font-medium uppercase tracking-wider">Nuestra Historia</span>
-               </div>
-               <h2 className="text-4xl md:text-5xl font-bold text-industrial-900 mb-6">
-                 Conócenos
-               </h2>
-               <div className="space-y-6 text-lg text-industrial-600 leading-relaxed">
-                 <p>
-                   Somos una sala multiespacios que está totalmente adaptada para nuestros clientes. 
-                   Nacemos de la recuperación de una antigua estructura industrial, transformada 
-                   cuidadosamente para mantener su esencia y carácter único.
-                 </p>
-                 <p>
-                   De una nave industrial original, hemos creado un lugar donde la historia del edificio 
-                   se funde con la modernidad y la versatilidad necesaria para cualquier tipo de evento. 
-                   Aquí, cada rincón cuenta una historia y cada evento escribe una nueva.
-                 </p>
-               </div>
-             </div>
+            <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
+              <img
+                src="https://images.unsplash.com/photo-1518005020250-68594931bc97?auto=format&fit=crop&q=80&w=1200"
+                alt="Fachada Sala Frecuenzy Multiespacios"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div>
+              <div className="flex items-center gap-2 text-copper mb-4">
+                <span className="w-12 h-px bg-copper"></span>
+                <span className="text-sm font-medium uppercase tracking-wider">Nuestra Historia</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-industrial-900 mb-6">
+                Conócenos
+              </h2>
+              <div className="space-y-6 text-lg text-industrial-600 leading-relaxed">
+                <p>
+                  Somos una sala multiespacios que está totalmente adaptada para nuestros clientes.
+                  Nacemos de la recuperación de una antigua estructura industrial, transformada
+                  cuidadosamente para mantener su esencia y carácter único.
+                </p>
+                <p>
+                  De una nave industrial original, hemos creado un lugar donde la historia del edificio
+                  se funde con la modernidad y la versatilidad necesaria para cualquier tipo de evento.
+                  Aquí, cada rincón cuenta una historia y cada evento escribe una nueva.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -92,15 +92,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery - Nueva sección con 4 imágenes conceptuales */}
+      {/* Gallery - Nueva sección con imágenes premium */}
       <section className="py-24 bg-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-white mb-12 text-center">Descubre nuestros espacios</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {galleryImages.map((img, index) => (
               <div key={index} className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg group hover:shadow-2xl transition-all duration-500">
-                <img 
-                  src={img.src} 
+                <img
+                  src={img.src}
                   alt={img.alt}
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
