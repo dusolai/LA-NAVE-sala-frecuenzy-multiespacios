@@ -1,14 +1,13 @@
 import { Calendar, MessageCircle } from 'lucide-react'
 
 interface FloatingCTAProps {
-  variant?: 'wedding' | 'corporate' | 'university' | 'default'
+  variant?: 'wedding' | 'corporate' | 'default'
 }
 
 const variantStyles = {
   default: 'bg-industrial-900 hover:bg-industrial-800',
   wedding: 'bg-wedding hover:bg-copper-dark',
   corporate: 'bg-corporate hover:bg-industrial-700',
-  university: 'bg-university hover:bg-indigo-700',
 }
 
 export default function FloatingCTA({ variant = 'default' }: FloatingCTAProps) {

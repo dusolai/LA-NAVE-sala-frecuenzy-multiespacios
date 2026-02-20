@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 
-type Variant = 'default' | 'wedding' | 'corporate' | 'university'
+type Variant = 'default' | 'wedding' | 'corporate'
 
 interface NavbarProps {
   variant?: Variant
@@ -12,7 +12,6 @@ const variantStyles: Record<Variant, { bg: string; text: string; accent: string 
   default: { bg: 'bg-white/95', text: 'text-industrial-900', accent: 'text-copper' },
   wedding: { bg: 'bg-white/95', text: 'text-industrial-800', accent: 'text-wedding' },
   corporate: { bg: 'bg-industrial-900/95', text: 'text-white', accent: 'text-steel-light' },
-  university: { bg: 'bg-white/95', text: 'text-industrial-900', accent: 'text-university' },
 }
 
 export default function Navbar({ variant = 'default' }: NavbarProps) {
@@ -24,7 +23,6 @@ export default function Navbar({ variant = 'default' }: NavbarProps) {
     { href: '/#conocenos', label: 'Conócenos' },
     { href: '/bodas', label: 'Bodas' },
     { href: '/empresas', label: 'Empresas' },
-    { href: '/universitarios', label: 'Universitarios' },
   ]
 
   return (

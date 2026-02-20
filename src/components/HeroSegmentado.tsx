@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Heart, Briefcase, GraduationCap, ArrowRight } from 'lucide-react'
+import { Heart, Briefcase, ArrowRight } from 'lucide-react'
 
 const segments = [
   {
@@ -21,16 +21,6 @@ const segments = [
     icon: Briefcase,
     gradient: 'from-industrial-800/90 to-steel-dark/80',
     hoverColor: 'hover:border-corporate',
-  },
-  {
-    id: 'universitarios',
-    title: 'Universitarios',
-    subtitle: 'Fiesta segura',
-    description: 'Autobus incluido y seguridad garantizada',
-    href: '/universitarios',
-    icon: GraduationCap,
-    gradient: 'from-university/90 to-indigo-700/80',
-    hoverColor: 'hover:border-university',
   },
 ]
 

@@ -2,13 +2,12 @@ import { useState } from 'react'
 import { Send, CheckCircle } from 'lucide-react'
 
 interface ContactFormProps {
-  segment?: 'bodas' | 'empresas' | 'universitarios' | 'general'
+  segment?: 'bodas' | 'empresas' | 'general'
 }
 
 const segmentLabels = {
   bodas: 'Boda',
   empresas: 'Evento Corporativo',
-  universitarios: 'Fiesta Universitaria',
   general: 'General',
 }
 
