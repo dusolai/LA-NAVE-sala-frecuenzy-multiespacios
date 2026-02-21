@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <h4 className="font-display font-bold text-2xl mb-6 tracking-wider">SALA FRECUENZY</h4>
             <p className="text-gray-400 text-base max-w-sm mb-8 font-body leading-relaxed">
-              Un espacio multiespacios singular en el corazón de la Ribera Navarra. Donde la libertad y el estilo se encuentran.
+              Un espacio multiespacios en el corazón de la Ribera Navarra. Donde la libertad y el estilo se encuentran.
             </p>
             <div className="flex space-x-4">
               <a

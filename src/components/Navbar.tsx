@@ -37,8 +37,8 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-body font-semibold uppercase tracking-widest transition-all duration-300 flex items-center gap-2 hover:text-primary ${location.hash === link.href.split('#')[1] || location.pathname === link.href
-                    ? 'text-primary'
-                    : 'text-gray-700 dark:text-gray-300'
+                  ? 'text-primary'
+                  : 'text-gray-700 dark:text-gray-300'
                   }`}
               >
                 <span className="material-symbols-outlined text-lg">{link.icon}</span>

@@ -42,7 +42,7 @@ export default function Bodas() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="max-w-2xl animate-in slide-in-from-left duration-1000">
             <span className="inline-block bg-primary/20 text-primary px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-6 border border-primary/20">
-              Espacio Singular para Bodas
+              Sala Multiespacios para Bodas
             </span>
             <h1 className="font-display text-5xl lg:text-7xl font-bold text-white mb-8 leading-[1.1]">
               Tu día,<br />tus reglas
@@ -76,7 +76,7 @@ export default function Bodas() {
               Por qué elegirnos
             </h2>
             <p className="font-body text-gray-500 dark:text-gray-400 text-lg max-w-2xl mx-auto italic leading-relaxed">
-              "No somos un salón de bodas clásico. Somos tu lienzo en blanco."
+              "Somos una sala multiespacios preparada para tu gran día."
             </p>
           </div>
 

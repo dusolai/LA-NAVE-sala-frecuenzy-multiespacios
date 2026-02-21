@@ -4,7 +4,8 @@ const services = [
     items: [
       { icon: "event_available", title: "Wedding Planner", desc: "Servicio integral para tu tranquilidad." },
       { icon: "local_florist", title: "Floristería", desc: "Decoración floral personalizada." },
-      { icon: "mail", title: "Invitaciones", desc: "Digitales o impresas a medida." }
+      { icon: "photo_camera", title: "Fotografía", desc: "Capturando cada momento especial." },
+      { icon: "videocam", title: "Vídeo", desc: "Tu evento en alta definición." }
     ]
   },
   {
@@ -13,7 +14,7 @@ const services = [
       { icon: "music_note", title: "DJ & Música", desc: "Equipamiento profesional de sonido e iluminación." },
       { icon: "child_care", title: "Zona Kids", desc: "Entretenimiento seguro para los más pequeños." },
       { icon: "restaurant", title: "Catering", desc: "Opciones gastronómicas de primer nivel." },
-      { icon: "photo_camera", title: "Audiovisuales", desc: "Equipos de proyección y sonido avanzado." }
+      { icon: "mail", title: "Invitaciones", desc: "Digitales o impresas a medida." }
     ]
   }
 ]

@@ -19,6 +19,24 @@ const segments = [
     image: '/images/corporate_event.png',
     action: 'Ver opciones',
   },
+  {
+    id: 'cumpleanos',
+    title: 'Cumpleaños',
+    description: 'Celebra tu día con total libertad.',
+    href: '#contacto',
+    icon: 'cake',
+    image: '/images/venue_interior.png',
+    action: 'Más info',
+  },
+  {
+    id: 'privados',
+    title: 'Eventos Privados',
+    description: 'Privacidad y personalización total.',
+    href: '#contacto',
+    icon: 'lock',
+    image: '/images/gallery_1.png',
+    action: 'Más info',
+  },
 ]
 
 export default function HeroSegmentado() {
@@ -35,11 +53,11 @@ export default function HeroSegmentado() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-4 tracking-tight uppercase">
             SALA FRECUENZY
           </h1>
-          <p className="text-gray-300 max-w-2xl mx-auto mb-8 text-sm md:text-lg leading-relaxed font-body">
-            MULTIESPACIOS - No somos un salón de bodas clásico. Somos un espacio singular y moderno donde tú tienes el control total.
+          <p className="text-gray-300 max-w-2xl mx-auto mb-8 text-sm md:text-lg leading-relaxed font-body italic">
+            "Somos una sala multiespacios preparada para cualquier tipo de evento. Tu lienzo en blanco en la Ribera Navarra."
           </p>
           <p className="text-primary text-xs uppercase tracking-widest font-bold mb-10 bg-primary/10 inline-block px-4 py-1 rounded-full border border-primary/20">
             Cintruénigo, Navarra
