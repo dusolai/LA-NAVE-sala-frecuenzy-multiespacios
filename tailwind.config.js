@@ -106,6 +106,5 @@ module.exports = {
       'slide-in': 'slide-in 0.5s ease-out forwards',
     },
   },
-},
   plugins: [require('tailwindcss-animate')],
 }
