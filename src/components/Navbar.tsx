@@ -17,7 +17,8 @@ export default function Navbar() {
   const links = [
     { href: '/#conocenos', label: 'Conócenos', icon: 'info' },
     { href: '/bodas', label: 'Bodas', icon: 'favorite' },
-    { href: '/empresas', label: 'Empresas', icon: 'business_center' },
+    { href: '/cumpleanos', label: 'Cumpleaños', icon: 'cake' },
+    { href: '/eventos-privados', label: 'Eventos Privados', icon: 'lock' },
   ]
 
   return (

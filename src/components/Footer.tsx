@@ -34,7 +34,8 @@ export default function Footer() {
             <h5 className="font-display font-bold text-primary mb-6 text-sm uppercase tracking-[0.2em]">Espacios</h5>
             <ul className="space-y-4 text-sm font-body">
               <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/bodas">Bodas</Link></li>
-              <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/empresas">Empresas</Link></li>
+              <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/cumpleanos">Cumpleaños</Link></li>
+              <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/eventos-privados">Eventos Privados</Link></li>
               <li><a className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" href="#conocenos">Conócenos</a></li>
             </ul>
           </div>

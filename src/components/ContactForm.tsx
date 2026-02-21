@@ -1,12 +1,13 @@
 import { useState } from 'react'
 
 interface ContactFormProps {
-  segment?: 'bodas' | 'empresas' | 'general'
+  segment?: 'bodas' | 'empresas' | 'general' | 'privados' | 'cumpleanos'
 }
 
 const segmentLabels = {
   bodas: 'Boda',
-  empresas: 'Evento Corporativo',
+  privados: 'Evento Privado',
+  cumpleanos: 'Cumpleaños',
   general: 'General',
 }
 
