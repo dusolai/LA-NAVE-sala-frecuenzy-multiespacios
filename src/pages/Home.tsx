@@ -15,10 +15,10 @@ const features = [
 
 // Galería: Imágenes premium de Unsplash
 const galleryImages = [
-  { src: 'https://images.unsplash.com/photo-1518005020250-68594931bc97?auto=format&fit=crop&q=80&w=1200', alt: 'Fachada Sala Frecuenzy' },
-  { src: 'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=1200', alt: 'Espacio Industrial' },
-  { src: 'https://images.unsplash.com/photo-1519225421980-715bd0215aed?auto=format&fit=crop&q=80&w=1200', alt: 'Interior Sala Eventos' },
-  { src: 'https://images.unsplash.com/photo-1558444479-c8a027920927?auto=format&fit=crop&q=80&w=1200', alt: 'Detalle Arquitectonico' },
+  { src: '/images/venue_exterior.png', alt: 'Fachada Sala Frecuenzy' },
+  { src: '/images/venue_interior.png', alt: 'Espacio Industrial' },
+  { src: '/images/wedding_setup.png', alt: 'Interior Sala Eventos' },
+  { src: '/images/gallery_1.png', alt: 'Detalle Arquitectonico' },
 ]
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1518005020250-68594931bc97?auto=format&fit=crop&q=80&w=1200"
+                src="/images/venue_exterior.png"
                 alt="Fachada Sala Frecuenzy Multiespacios"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />

@@ -28,7 +28,7 @@ export default function Empresas() {
       <section className="min-h-screen flex items-center relative pt-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1505373633519-79633f60704b?auto=format&fit=crop&q=80&w=1920"
+            src="/images/corporate_event.png"
             alt="Evento corporativo"
             className="w-full h-full object-cover"
           />

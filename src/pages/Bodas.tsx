@@ -19,12 +19,12 @@ const testimonials = [
 ]
 
 const galleryImages = [
-  'https://images.unsplash.com/photo-1519225421980-715bd0215aed?auto=format&fit=crop&q=80&w=1200',
-  'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=1200',
-  'https://images.unsplash.com/photo-1558444479-c8a027920927?auto=format&fit=crop&q=80&w=1200',
-  'https://images.unsplash.com/photo-1518005020250-68594931bc97?auto=format&fit=crop&q=80&w=1200',
-  'https://images.unsplash.com/photo-1505373633519-79633f60704b?auto=format&fit=crop&q=80&w=1200',
-  'https://images.unsplash.com/photo-1519225421980-715bd0215aed?auto=format&fit=crop&q=80&w=1200',
+  '/images/wedding_setup.png',
+  '/images/venue_interior.png',
+  '/images/gallery_1.png',
+  '/images/venue_exterior.png',
+  '/images/corporate_event.png',
+  '/images/wedding_setup.png',
 ]
 
 export default function Bodas() {
@@ -37,7 +37,7 @@ export default function Bodas() {
       <section className="min-h-screen flex items-center relative pt-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1519225421980-715bd0215aed?auto=format&fit=crop&q=80&w=1920"
+            src="/images/wedding_setup.png"
             alt="Espacio industrial para bodas"
             className="w-full h-full object-cover"
           />
