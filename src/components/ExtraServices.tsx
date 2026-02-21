@@ -1,104 +1,81 @@
-import { 
-  Video, 
-  Mail, 
-  Smile, 
-  Music, 
-  Car, 
-  Bus, 
-  Bed, 
-  Utensils, 
-  Sparkles,
-  PartyPopper,
-  Flower,
-  ClipboardList
-} from 'lucide-react'
-
-const BullIcon = Smile; // Fallback icon
-
 const services = [
   {
     category: "Organización & Detalles",
     items: [
-      { icon: ClipboardList, title: "Wedding Planner", desc: "Servicio integral para que no te preocupes de nada." },
-      { icon: Flower, title: "Floristería", desc: "Decoración floral personalizada para tu evento." },
-      { icon: Mail, title: "Invitaciones", desc: "Digitales o impresas a medida." }
-    ]
-  },
-  {
-    category: "Logística & Alojamiento",
-    items: [
-      { icon: Bus, title: "Servicio de Transporte", desc: "Autobuses para invitados. Seguridad ante todo." },
-      { icon: Bed, title: "Alojamiento", desc: "Hoteles cercanos con tarifas especiales." },
-      { icon: Car, title: "Coche con Chófer", desc: "Llegada espectacular para novios o VIPs." }
+      { icon: "event_available", title: "Wedding Planner", desc: "Servicio integral para tu tranquilidad." },
+      { icon: "local_florist", title: "Floristería", desc: "Decoración floral personalizada." },
+      { icon: "mail", title: "Invitaciones", desc: "Digitales o impresas a medida." }
     ]
   },
   {
     category: "Fiesta & Entretenimiento",
     items: [
-      { icon: BullIcon, title: "Capeas y Animales", desc: "Entretenimiento tradicional y exhibiciones." },
-      { icon: Smile, title: "Zona Kids", desc: "Castillo hinchable y animadores." },
-      { icon: Video, title: "Audiovisuales 3D", desc: "Proyecciones y mapping." },
-      { icon: Utensils, title: "Catering a Medida", desc: "Tú eliges el menú." },
-      { icon: Music, title: "DJ & Música", desc: "Cabina profesional y sonido." }
+      { icon: "music_note", title: "DJ & Música", desc: "Equipamiento profesional de sonido e iluminación." },
+      { icon: "child_care", title: "Zona Kids", desc: "Entretenimiento seguro para los más pequeños." },
+      { icon: "restaurant", title: "Catering", desc: "Opciones gastronómicas de primer nivel." },
+      { icon: "photo_camera", title: "Audiovisuales", desc: "Equipos de proyección y sonido avanzado." }
     ]
   }
 ]
 
 export default function ExtraServices() {
   return (
-    <section className="py-24 bg-industrial-50">
+    <section className="py-20 bg-background-light dark:bg-background-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-industrial-900 mb-4">
+        <div className="text-center mb-16 px-4">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Mucho más que un espacio
           </h2>
-          <p className="text-xl text-industrial-600 max-w-3xl mx-auto">
-            Elevamos tu evento al siguiente nivel con nuestros servicios de valor añadido. 
-            Tú lo imaginas, nosotros lo hacemos realidad.
+          <p className="font-body text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+            Elevamos tu evento al siguiente nivel con nuestros servicios de valor añadido.
           </p>
         </div>
 
-        <div className="grid gap-12">
+        <div className="space-y-16">
           {services.map((group, groupIndex) => (
-            <div key={groupIndex}>
-              <h3 className="text-2xl font-bold text-industrial-800 mb-8 border-l-4 border-copper pl-4">
-                {group.category}
-              </h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                {group.items.map((service, index) => {
-                  const Icon = service.icon
-                  return (
-                    <div key={index} className="bg-white p-6 border border-industrial-200 hover:border-copper transition-colors shadow-sm group">
-                      <div className="w-12 h-12 bg-industrial-50 rounded-full flex items-center justify-center mb-4 group-hover:bg-copper/10 transition-colors">
-                        <Icon className="w-6 h-6 text-industrial-700 group-hover:text-copper transition-colors" />
-                      </div>
-                      <h4 className="font-bold text-lg text-industrial-900 mb-2">{service.title}</h4>
-                      <p className="text-industrial-600 text-sm">{service.desc}</p>
+            <div key={groupIndex} className="animate-in fade-in duration-700">
+              <div className="flex items-center gap-4 mb-10 border-l-4 border-primary pl-4">
+                <h3 className="font-display text-xl font-bold text-gray-900 dark:text-white uppercase tracking-[0.2em]">
+                  {group.category}
+                </h3>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {group.items.map((service, index) => (
+                  <div
+                    key={index}
+                    className="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1"
+                  >
+                    <div className="w-12 h-12 bg-primary/5 dark:bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                      <span className="material-symbols-outlined text-2xl">{service.icon}</span>
                     </div>
-                  )
-                })}
+                    <h4 className="font-display font-bold text-lg text-gray-900 dark:text-white mb-3 tracking-wide">{service.title}</h4>
+                    <p className="font-body text-gray-500 dark:text-gray-400 text-sm leading-relaxed">{service.desc}</p>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 bg-industrial-900 rounded-lg p-8 md:p-12 text-center text-white relative overflow-hidden">
-          <div className="relative z-10">
-            <Sparkles className="w-12 h-12 text-copper mx-auto mb-6" />
-            <h3 className="text-3xl font-bold mb-4">¿Tienes una idea diferente?</h3>
-            <p className="text-xl text-industrial-300 mb-8 max-w-2xl mx-auto">
-              Cenas de empresa, cumpleaños privados, ensayos o lanzamientos de producto. 
-              Alquilamos la sala para <strong>todo lo que el cliente necesite</strong>.
+        {/* CTA Section */}
+        <div className="mt-24 relative bg-background-dark rounded-3xl overflow-hidden p-8 md:p-20 text-center shadow-2xl">
+          <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(#CBA16F 0.5px, transparent 0.5px)', backgroundSize: '24px 24px' }}></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent"></div>
+
+          <div className="relative z-10 max-w-3xl mx-auto animate-in zoom-in duration-700">
+            <span className="material-symbols-outlined text-primary text-6xl mb-6">auto_awesome</span>
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">¿Tienes una idea diferente?</h2>
+            <p className="text-gray-300 max-w-lg mx-auto mb-12 text-lg font-body leading-relaxed">
+              Cenas de empresa, cumpleaños privados, ensayos o lanzamientos de producto. Alquilamos la sala para todo lo que necesites.
             </p>
-            <a 
-              href="#contacto" 
-              className="inline-flex items-center gap-2 px-8 py-3 bg-white text-industrial-900 font-bold hover:bg-copper hover:text-white transition-colors rounded"
+            <a
+              href="#contacto"
+              className="bg-white text-background-dark hover:bg-primary hover:text-white font-bold py-4 px-10 rounded-full transition-all duration-300 inline-flex items-center gap-3 shadow-xl transform hover:scale-105 active:scale-95"
             >
-              <PartyPopper size={20} />
+              <span className="material-symbols-outlined text-sm">edit</span>
               Personalizar mi evento
             </a>
           </div>
-          <div className="absolute top-0 right-0 w-64 h-64 bg-copper/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
         </div>
       </div>
     </section>

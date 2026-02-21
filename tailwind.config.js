@@ -17,86 +17,95 @@ module.exports = {
     },
     extend: {
       colors: {
-        // Industrial palette
+        primary: "#CBA16F",
+        "primary-dark": "#B08A55",
+        "background-light": "#F9F9F9",
+        "background-dark": "#0A0A0E",
+        "surface-light": "#FFFFFF",
+        "surface-dark": "#15151A",
         industrial: {
-          50: '#f7f7f7',
-          100: '#e3e3e3',
-          200: '#c8c8c8',
-          300: '#a4a4a4',
-          400: '#818181',
-          500: '#666666',
-          600: '#515151',
-          700: '#434343',
-          800: '#383838',
-          900: '#1a1a1a',
-          950: '#0d0d0d',
+          50: '#f8f9fa',
+          100: '#f1f3f5',
+          200: '#e9ecef',
+          300: '#dee2e6',
+          400: '#ced4da',
+          500: '#adb5bd',
+          600: '#868e96',
+          700: '#495057',
+          800: '#343a40',
+          900: '#212529',
         },
-        // Accent colors
         copper: {
-          DEFAULT: '#b87333',
-          light: '#d4956b',
-          dark: '#8b5a2b',
+          light: '#d4a373',
+          DEFAULT: '#bc6c25',
+          dark: '#936639',
         },
         steel: {
-          DEFAULT: '#71797E',
-          light: '#A7B1B7',
-          dark: '#4A5055',
+          light: '#f8f9fa',
+          DEFAULT: '#ced4da',
+          dark: '#adb5bd',
         },
         concrete: {
-          DEFAULT: '#95a5a6',
-          light: '#bdc3c7',
-          dark: '#7f8c8d',
+          light: '#e9ecef',
+          DEFAULT: '#dee2e6',
+          dark: '#ced4da',
         },
         // Segment colors
-        wedding: '#d4a574',
-        corporate: '#4a5568',
+        wedding: {
+          light: '#fdf0d5',
+          DEFAULT: '#CBA16F',
+          dark: '#780000',
+        },
+        corporate: {
+          light: '#003049',
+          DEFAULT: '#669bbc',
+          dark: '#c1121f',
+        },
         university: '#6366f1',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-        primary: {
-          DEFAULT: '#1a1a1a',
-          foreground: '#ffffff',
-        },
-        secondary: {
-          DEFAULT: '#666666',
-          foreground: '#ffffff',
-        },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
-        },
-        card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
-        },
+        foreground: '#ffffff',
       },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Inter', 'system-ui', 'sans-serif'],
+      secondary: {
+        DEFAULT: '#666666',
+        foreground: '#ffffff',
       },
-      borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+      muted: {
+        DEFAULT: 'hsl(var(--muted))',
+        foreground: 'hsl(var(--muted-foreground))',
       },
-      keyframes: {
-        'fade-in': {
-          '0%': { opacity: 0, transform: 'translateY(20px)' },
-          '100%': { opacity: 1, transform: 'translateY(0)' },
-        },
-        'slide-in': {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(0)' },
-        },
-      },
-      animation: {
-        'fade-in': 'fade-in 0.6s ease-out forwards',
-        'slide-in': 'slide-in 0.5s ease-out forwards',
+      card: {
+        DEFAULT: 'hsl(var(--card))',
+        foreground: 'hsl(var(--card-foreground))',
       },
     },
+    fontFamily: {
+      sans: ['Inter', 'system-ui', 'sans-serif'],
+      display: ['Inter', 'system-ui', 'sans-serif'],
+    },
+    borderRadius: {
+      lg: 'var(--radius)',
+      md: 'calc(var(--radius) - 2px)',
+      sm: 'calc(var(--radius) - 4px)',
+    },
+    keyframes: {
+      'fade-in': {
+        '0%': { opacity: 0, transform: 'translateY(20px)' },
+        '100%': { opacity: 1, transform: 'translateY(0)' },
+      },
+      'slide-in': {
+        '0%': { transform: 'translateX(-100%)' },
+        '100%': { transform: 'translateX(0)' },
+      },
+    },
+    animation: {
+      'fade-in': 'fade-in 0.6s ease-out forwards',
+      'slide-in': 'slide-in 0.5s ease-out forwards',
+    },
   },
+},
   plugins: [require('tailwindcss-animate')],
 }
