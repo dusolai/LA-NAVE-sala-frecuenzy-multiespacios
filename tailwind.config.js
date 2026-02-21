@@ -83,8 +83,9 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ['Inter', 'system-ui', 'sans-serif'],
-      display: ['Inter', 'system-ui', 'sans-serif'],
+      display: ["'Playfair Display'", "serif"],
+      body: ["'Lato'", "sans-serif"],
+      sans: ["'Lato'", "sans-serif"],
     },
     borderRadius: {
       lg: 'var(--radius)',
