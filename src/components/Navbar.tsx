@@ -19,6 +19,7 @@ export default function Navbar() {
     { href: '/bodas', label: 'Bodas', icon: 'favorite' },
     { href: '/cumpleanos', label: 'Cumpleaños', icon: 'cake' },
     { href: '/eventos-privados', label: 'Eventos Privados', icon: 'lock' },
+    { href: '/escuela-dj', label: 'Escuela DJ', icon: 'headphones' },
   ]
 
   return (

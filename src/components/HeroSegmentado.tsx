@@ -28,6 +28,15 @@ const segments = [
     image: '/images/gallery_1.png',
     action: 'Más info',
   },
+  {
+    id: 'dj',
+    title: 'Escuela DJ',
+    description: 'Aprende con los mejores profesionales.',
+    href: '/escuela-dj',
+    icon: 'headphones',
+    image: '/images/venue_interior.png',
+    action: 'Ver cursos',
+  },
 ]
 
 export default function HeroSegmentado() {

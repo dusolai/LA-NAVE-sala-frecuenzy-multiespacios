@@ -36,6 +36,7 @@ export default function Footer() {
               <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/bodas">Bodas</Link></li>
               <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/cumpleanos">Cumpleaños</Link></li>
               <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/eventos-privados">Eventos Privados</Link></li>
+              <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/escuela-dj">Escuela DJ</Link></li>
               <li><a className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" href="#conocenos">Conócenos</a></li>
             </ul>
           </div>
