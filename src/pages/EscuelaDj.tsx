@@ -60,7 +60,7 @@ export default function EscuelaDj() {
             <section className="relative min-h-[80vh] flex items-center overflow-hidden bg-background-dark">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/images/dj_school_premium_booth.png"
+                        src="/images/dj_hero_booth.jpg"
                         alt="Escuela de DJ Sala Frecuenzy"
                         className="w-full h-full object-cover opacity-60"
                     />
@@ -124,7 +124,7 @@ export default function EscuelaDj() {
                         <div className="relative group">
                             <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-2xl group-hover:bg-primary/30 transition-all duration-500 scale-95 opacity-50"></div>
                             <img
-                                src="/images/venue_interior.png"
+                                src="/images/dj_mixer_closeup.jpg"
                                 alt="Formación DJ"
                                 className="rounded-3xl shadow-2xl border border-gray-100 dark:border-gray-800 relative z-10"
                             />
@@ -211,12 +211,12 @@ export default function EscuelaDj() {
                         </div>
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-4">
-                                <img src="/images/gallery_1.png" className="rounded-2xl h-48 w-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500" alt=" Booth 1" />
-                                <img src="/images/wedding_setup.png" className="rounded-2xl h-64 w-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500" alt="Booth 2" />
+                                <img src="/images/dj_mixer_closeup.jpg" className="rounded-2xl h-48 w-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500" alt="Mesa de mezclas DJ" />
+                                <img src="/images/dj_turntable.jpg" className="rounded-2xl h-64 w-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500" alt="DJ Turntable" />
                             </div>
                             <div className="space-y-4 pt-12">
-                                <img src="/images/corporate_event.png" className="rounded-2xl h-64 w-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500" alt="Booth 3" />
-                                <img src="/images/venue_interior.png" className="rounded-2xl h-48 w-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500" alt="Booth 4" />
+                                <img src="/images/dj_headphones.jpg" className="rounded-2xl h-64 w-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500" alt="Auriculares DJ profesionales" />
+                                <img src="/images/dj_booth_lights.jpg" className="rounded-2xl h-48 w-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500" alt="Cabina DJ con luces" />
                             </div>
                         </div>
                     </div>
