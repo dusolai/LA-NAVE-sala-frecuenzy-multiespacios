@@ -36,7 +36,7 @@ export default function Footer() {
               <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/bodas">Bodas</Link></li>
               <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/cumpleanos">Cumpleaños</Link></li>
               <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/eventos-privados">Eventos Privados</Link></li>
-              <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/escuela-dj">Frequency Talent</Link></li>
+              <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/escuela-dj">Frecuenzy Talent</Link></li>
               <li><a className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" href="#conocenos">Conócenos</a></li>
             </ul>
           </div>
@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-xl">mail</span>
-                <a href="mailto:info@salafrequency.com" className="hover:text-white transition-colors">info@salafrequency.com</a>
+                <a href="mailto:info@salafrecuenzy.com" className="hover:text-white transition-colors">info@salafrecuenzy.com</a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-xl">chat</span>

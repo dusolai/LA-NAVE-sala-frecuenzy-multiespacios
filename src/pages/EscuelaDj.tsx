@@ -76,7 +76,7 @@ export default function EscuelaDj() {
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/dj_hero_booth.jpg"
-                        alt="Frequency Talent — Escuela de DJs"
+                        alt="Frecuenzy Talent — Escuela de DJs"
                         className="w-full h-full object-cover opacity-60"
                     />
                     <div className="absolute inset-0 bg-gradient-to-br from-background-dark via-background-dark/80 to-transparent"></div>
@@ -86,7 +86,7 @@ export default function EscuelaDj() {
                     <div className="max-w-3xl animate-in fade-in slide-in-from-left duration-1000">
                         <h4 className="font-display font-bold text-primary mb-6 text-sm uppercase tracking-[0.4em] flex items-center gap-4">
                             <span className="w-10 h-px bg-primary"></span>
-                            Frequency Talent · Escuela de DJs
+                            Frecuenzy Talent · Escuela de DJs
                         </h4>
                         <h1 className="font-display text-5xl lg:text-8xl font-bold text-white mb-8 leading-tight">
                             Domina la<br /><span className="text-primary italic">cabina</span>
@@ -128,7 +128,7 @@ export default function EscuelaDj() {
                                 Mucho más que mezclar canciones
                             </h2>
                             <p className="font-body text-gray-500 dark:text-gray-400 text-lg mb-10 leading-relaxed">
-                                En Frequency Talent no solo enseñamos técnicas; formamos artistas. Nuestro sistema completo te lleva desde los fundamentos básicos hasta el dominio total de la actuación en directo. Directo a cabina desde el primer día.
+                                En Frecuenzy Talent no solo enseñamos técnicas; formamos artistas. Nuestro sistema completo te lleva desde los fundamentos básicos hasta el dominio total de la actuación en directo. Directo a cabina desde el primer día.
                             </p>
                             <div className="grid grid-cols-2 gap-8">
                                 <div>

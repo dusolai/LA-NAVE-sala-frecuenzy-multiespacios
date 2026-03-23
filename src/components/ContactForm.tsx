@@ -8,7 +8,7 @@ const segmentLabels = {
   bodas: 'Boda',
   privados: 'Evento Privado',
   cumpleanos: 'Cumpleaños',
-  dj: 'Frequency Talent — Escuela de DJ',
+  dj: 'Frecuenzy Talent — Escuela de DJ',
   general: 'General',
 }
 
@@ -48,7 +48,7 @@ export default function ContactForm({ segment = 'general' }: ContactFormProps) {
     setLoading(false)
     setSubmitted(true)
 
-    window.open(`mailto:info@salafrequency.com?subject=${subject}&body=${body}`, '_blank')
+    window.open(`mailto:info@salafrecuenzy.com?subject=${subject}&body=${body}`, '_blank')
   }
 
   if (submitted) {

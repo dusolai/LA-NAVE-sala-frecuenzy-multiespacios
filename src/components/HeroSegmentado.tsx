@@ -30,7 +30,7 @@ const segments = [
   },
   {
     id: 'dj',
-    title: 'Frequency Talent',
+    title: 'Frecuenzy Talent',
     description: 'Escuela de DJs — Aprende con los mejores profesionales.',
     href: '/escuela-dj',
     icon: 'headphones',
