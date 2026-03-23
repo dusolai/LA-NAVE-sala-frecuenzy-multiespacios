@@ -16,6 +16,13 @@ const services = [
       { icon: "restaurant", title: "Catering", desc: "Opciones gastronómicas de primer nivel." },
       { icon: "mail", title: "Invitaciones", desc: "Digitales o impresas a medida." }
     ]
+  },
+  {
+    category: "Innovación & Tecnología",
+    items: [
+      { icon: "view_in_ar", title: "Visión 3D", desc: "Visualiza la decoración de tu evento antes de realizarlo con nuestro servicio de Home Staging Digital." },
+      { icon: "auto_awesome", title: "Home Staging Digital", desc: "Mediante IA, te mostramos cómo quedaría tu boda, evento de empresa o celebración en nuestro espacio." },
+    ]
   }
 ]
 

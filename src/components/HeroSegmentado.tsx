@@ -30,8 +30,8 @@ const segments = [
   },
   {
     id: 'dj',
-    title: 'Escuela DJ',
-    description: 'Aprende con los mejores profesionales.',
+    title: 'Frequency Talent',
+    description: 'Escuela de DJs — Aprende con los mejores profesionales.',
     href: '/escuela-dj',
     icon: 'headphones',
     image: '/images/venue_interior.png',
@@ -63,22 +63,24 @@ export default function HeroSegmentado() {
             Cintruénigo, Navarra
           </p>
 
-          <div className="bg-surface-light dark:bg-surface-dark p-4 rounded-xl shadow-2xl max-w-sm mx-auto border border-gray-100 dark:border-gray-800 animate-in fade-in zoom-in duration-500">
-            <div className="flex items-center justify-between mb-3 px-1">
-              <span className="text-sm font-bold dark:text-white">Ver disponibilidad</span>
-              <span className="material-symbols-outlined text-primary text-sm">event</span>
-            </div>
-            <div className="grid grid-cols-2 gap-3">
-              <div className="relative">
-                <input
-                  className="w-full bg-gray-50 dark:bg-gray-800 border-none rounded-lg text-xs py-2.5 px-3 dark:text-gray-200 focus:ring-1 focus:ring-primary outline-none"
-                  type="date"
-                />
-              </div>
-              <button className="bg-primary hover:bg-primary-dark text-white text-xs font-bold py-2.5 px-4 rounded-lg transition-all duration-300 shadow-sm active:scale-95">
-                Buscar Fecha
-              </button>
-            </div>
+          {/* CTA directo - sin calendario */}
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="#contacto"
+              className="bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-xl transition-all duration-300 shadow-xl inline-flex items-center gap-3 group text-sm uppercase tracking-widest"
+            >
+              <span className="material-symbols-outlined text-sm">mail</span>
+              Solicitar información
+            </a>
+            <a
+              href="https://wa.me/34692918737"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#25D366] hover:bg-[#1da851] text-white font-bold py-3 px-8 rounded-xl transition-all duration-300 shadow-xl inline-flex items-center gap-3 group text-sm uppercase tracking-widest"
+            >
+              <span className="material-symbols-outlined text-sm">chat</span>
+              WhatsApp
+            </a>
           </div>
         </div>
       </header>

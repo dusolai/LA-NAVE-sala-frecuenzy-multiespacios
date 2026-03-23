@@ -3,10 +3,10 @@ import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 
 const specs = [
-  { label: 'Superficie', value: '1.200 m2', icon: 'square_foot' },
-  { label: 'Capacidad', value: '1100 px', icon: 'groups' },
+  { label: 'Superficie', value: '600 + 500 m²', icon: 'square_foot' },
+  { label: 'Capacidad', value: '800+ px', icon: 'groups' },
   { label: 'Altura', value: '8 metros', icon: 'straighten' },
-  { label: 'WIFI', value: '1 Gbps', icon: 'wifi' },
+  { label: 'WIFI', value: 'Alta velocidad', icon: 'wifi' },
 ]
 
 const features = [
@@ -77,7 +77,7 @@ export default function EventosPrivados() {
                 <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
                 <img
                   src="/images/gallery_1.png"
-                  alt="Instalaciones Eventos"
+                  alt="Instalaciones Eventos — Foto real próximamente"
                   className="rounded-3xl shadow-2xl relative z-10 border border-gray-100 dark:border-gray-800"
                 />
               </div>
@@ -139,6 +139,14 @@ export default function EventosPrivados() {
                 <span className="font-body text-gray-700 dark:text-gray-300 tracking-wide text-sm">{item}</span>
               </div>
             ))}
+          </div>
+          <div className="mt-8 p-4 bg-primary/5 rounded-xl border border-primary/10 text-left">
+            <div className="flex items-start gap-3">
+              <span className="material-symbols-outlined text-primary text-xl flex-shrink-0">info</span>
+              <p className="font-body text-gray-500 dark:text-gray-400 text-xs leading-relaxed">
+                Servicio de limpieza: se presupuesta y negocia según las necesidades del evento. No está incluido por defecto.
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -8,11 +8,13 @@ const segmentLabels = {
   bodas: 'Boda',
   privados: 'Evento Privado',
   cumpleanos: 'Cumpleaños',
-  dj: 'Escuela de DJ',
+  dj: 'Frequency Talent — Escuela de DJ',
   general: 'General',
 }
 
 export default function ContactForm({ segment = 'general' }: ContactFormProps) {
+  const isDj = segment === 'dj'
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,6 +22,8 @@ export default function ContactForm({ segment = 'general' }: ContactFormProps) {
     date: '',
     guests: '',
     message: '',
+    preferredSchedule: '',
+    experienceLevel: '',
   })
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -35,15 +39,16 @@ export default function ContactForm({ segment = 'general' }: ContactFormProps) {
       `Nombre: ${formData.name}\n` +
       `Email: ${formData.email}\n` +
       `Teléfono: ${formData.phone}\n` +
-      `Fecha: ${formData.date}\n` +
-      `Invitados: ${formData.guests}\n` +
+      (isDj
+        ? `Horario de preferencia: ${formData.preferredSchedule}\nNivel de experiencia: ${formData.experienceLevel}\n`
+        : `Fecha: ${formData.date}\nInvitados: ${formData.guests}\n`) +
       `Mensaje: ${formData.message}`
     )
 
     setLoading(false)
     setSubmitted(true)
 
-    window.open(`mailto:info@salafrecuenzy.es?subject=${subject}&body=${body}`, '_blank')
+    window.open(`mailto:info@salafrequency.com?subject=${subject}&body=${body}`, '_blank')
   }
 
   if (submitted) {
@@ -67,7 +72,9 @@ export default function ContactForm({ segment = 'general' }: ContactFormProps) {
   return (
     <div className="bg-surface-light dark:bg-surface-dark p-6 md:p-10 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-800">
       <div className="mb-8">
-        <h3 className="font-display text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">Hablemos de tu evento</h3>
+        <h3 className="font-display text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">
+          {isDj ? 'Reserva tu plaza' : 'Hablemos de tu evento'}
+        </h3>
         <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest">
           Tipo de consulta: <span className="text-primary font-bold">{segmentLabels[segment]}</span>
         </p>
@@ -102,15 +109,66 @@ export default function ContactForm({ segment = 'general' }: ContactFormProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-2">
-            <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-widest" htmlFor="date">Fecha prevista</label>
+            <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-widest" htmlFor="phone">Teléfono</label>
             <input
-              id="date"
-              type="date"
-              value={formData.date}
-              onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+              id="phone"
+              type="tel"
+              value={formData.phone}
+              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-sm px-4 py-3.5 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none dark:text-white transition-all"
+              placeholder="Tu teléfono"
             />
           </div>
+
+          {isDj ? (
+            <div className="space-y-2">
+              <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-widest" htmlFor="preferredSchedule">Horario de preferencia</label>
+              <select
+                id="preferredSchedule"
+                value={formData.preferredSchedule}
+                onChange={(e) => setFormData({ ...formData, preferredSchedule: e.target.value })}
+                className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-sm px-4 py-3.5 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none dark:text-white transition-all"
+              >
+                <option value="">Selecciona horario</option>
+                <option value="manana">Mañana</option>
+                <option value="tarde">Tarde</option>
+                <option value="noche">Noche</option>
+                <option value="fines_semana">Fines de semana</option>
+                <option value="flexible">Flexible</option>
+              </select>
+            </div>
+          ) : (
+            <div className="space-y-2">
+              <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-widest" htmlFor="date">Fecha prevista</label>
+              <input
+                id="date"
+                type="date"
+                value={formData.date}
+                onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+                className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-sm px-4 py-3.5 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none dark:text-white transition-all"
+              />
+            </div>
+          )}
+        </div>
+
+        {isDj ? (
+          <div className="space-y-2">
+            <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-widest" htmlFor="experienceLevel">Nivel de experiencia</label>
+            <select
+              id="experienceLevel"
+              value={formData.experienceLevel}
+              onChange={(e) => setFormData({ ...formData, experienceLevel: e.target.value })}
+              className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-sm px-4 py-3.5 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none dark:text-white transition-all"
+            >
+              <option value="">Selecciona tu nivel</option>
+              <option value="principiante">Principiante — Nunca he tocado</option>
+              <option value="basico">Básico — He probado mezclar</option>
+              <option value="intermedio">Intermedio — Mezclo habitualmente</option>
+              <option value="avanzado">Avanzado — Quiero mejorar técnica</option>
+              <option value="profesional">Profesional — Busco perfeccionamiento</option>
+            </select>
+          </div>
+        ) : (
           <div className="space-y-2">
             <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-widest" htmlFor="guests">Nº Invitados</label>
             <input
@@ -122,17 +180,19 @@ export default function ContactForm({ segment = 'general' }: ContactFormProps) {
               placeholder="Ej. 150"
             />
           </div>
-        </div>
+        )}
 
         <div className="space-y-2">
-          <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-widest" htmlFor="message">Cuéntanos sobre tu idea</label>
+          <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-widest" htmlFor="message">
+            {isDj ? 'Cuéntanos sobre tus objetivos' : 'Cuéntanos sobre tu idea'}
+          </label>
           <textarea
             id="message"
             rows={4}
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-sm px-4 py-3.5 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none dark:text-white transition-all resize-none"
-            placeholder="Describe tu evento ideal..."
+            placeholder={isDj ? 'Cuéntanos qué te gustaría aprender...' : 'Describe tu evento ideal...'}
           ></textarea>
         </div>
 

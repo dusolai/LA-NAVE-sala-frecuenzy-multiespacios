@@ -4,22 +4,25 @@ import CateringPartners from '../components/CateringPartners'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 import ExtraServices from '../components/ExtraServices'
+import { useState } from 'react'
 
 const features = [
-  { icon: 'groups', title: 'Hasta 1100', description: 'Espacio diáfano y versátil' },
-  { icon: 'straighten', title: '1,200m2', description: 'Nave industrial reformada' },
-  { icon: 'lightbulb', title: 'Iluminación', description: 'Sistema LED programable' },
+  { icon: 'groups', title: 'Más de 800', description: 'Capacidad para más de 800 personas' },
+  { icon: 'straighten', title: '600 m² + 500 m²', description: '600 m² zona interna · 500 m² parcela exterior' },
+  { icon: 'lightbulb', title: 'Iluminación', description: 'Sistema LED' },
   { icon: 'local_parking', title: 'Parking', description: 'Amplio aparcamiento privado' },
 ]
 
 const galleryImages = [
-  { src: '/images/venue_exterior.png', alt: 'Fachada Sala Frecuenzy' },
-  { src: '/images/venue_interior.png', alt: 'Espacio Industrial' },
-  { src: '/images/wedding_setup.png', alt: 'Interior Sala Eventos' },
-  { src: '/images/gallery_1.png', alt: 'Detalle Arquitectonico' },
+  { src: '/images/venue_exterior.png', alt: 'Fachada Sala Frecuenzy — Foto real próximamente' },
+  { src: '/images/venue_interior.png', alt: 'Espacio Industrial — Foto real próximamente' },
+  { src: '/images/wedding_setup.png', alt: 'Interior Sala Eventos — Foto real próximamente' },
+  { src: '/images/gallery_1.png', alt: 'Detalle Arquitectonico — Foto real próximamente' },
 ]
 
 export default function Home() {
+  const [showMore, setShowMore] = useState(false)
+
   return (
     <div className="min-h-screen bg-background-light dark:bg-background-dark">
       <Navbar />
@@ -32,7 +35,7 @@ export default function Home() {
             <div className="w-full md:w-1/2 animate-in slide-in-from-left duration-700">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                 <img
-                  alt="Modern Architecture Exterior"
+                  alt="Sala Frecuenzy — Foto real próximamente"
                   className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
                   src="/images/venue_exterior.png"
                 />
@@ -49,14 +52,19 @@ export default function Home() {
                 <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-body">
                   Somos una sala multiespacios que está totalmente adaptada para nuestros clientes. Nacemos de la recuperación de una antigua estructura industrial, transformada cuidadosamente para mantener su esencia y carácter único.
                 </p>
-                <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-body">
-                  De una nave industrial original, hemos creado un lugar donde la historia del edificio se funde con la modernidad y la versatilidad necesaria para cualquier tipo de evento. Aquí, cada rincón cuenta una historia y cada evento escribe una nueva.
-                </p>
+                {showMore && (
+                  <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-body animate-in fade-in slide-in-from-top duration-500">
+                    De una nave industrial original, hemos creado un lugar donde la historia del edificio se funde con la modernidad y la versatilidad necesaria para cualquier tipo de evento. Con más de 600 m² de zona interna en una nave industrial reformada y 500 m² de parcela exterior, ofrecemos un espacio con capacidad para más de 800 personas. Aquí, cada rincón cuenta una historia y cada evento escribe una nueva.
+                  </p>
+                )}
               </div>
               <div className="mt-10">
-                <button className="text-primary font-bold uppercase text-xs tracking-[0.2em] hover:text-primary-dark transition-all duration-300 border-b-2 border-primary/30 hover:border-primary pb-2 flex items-center gap-3">
-                  Leer más sobre nosotros
-                  <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                <button
+                  onClick={() => setShowMore(!showMore)}
+                  className="text-primary font-bold uppercase text-xs tracking-[0.2em] hover:text-primary-dark transition-all duration-300 border-b-2 border-primary/30 hover:border-primary pb-2 flex items-center gap-3"
+                >
+                  {showMore ? 'Leer menos' : 'Leer más sobre nosotros'}
+                  <span className="material-symbols-outlined text-sm">{showMore ? 'expand_less' : 'arrow_forward'}</span>
                 </button>
               </div>
             </div>
@@ -148,7 +156,7 @@ export default function Home() {
               <div className="p-1 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-inner">
                 <div className="aspect-video overflow-hidden rounded-xl h-64 w-full grayscale hover:grayscale-0 transition-all duration-700">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23534.89!2d-1.8!3d42.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5086f0c0c0c0c0%3A0x0!2sCintru%C3%A9nigo%2C%20Navarra!5e0!3m2!1ses!2ses!4v1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.5!2d-1.8043!3d42.078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50814fb7deaab1%3A0x4e6b42f4b1e8f89!2sSala%20Frecuenzy!5e0!3m2!1ses!2ses!4v1"
                     width="100%" height="100%" style={{ border: 0 }}
                     allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                     title="Ubicacion Sala Frecuenzy"

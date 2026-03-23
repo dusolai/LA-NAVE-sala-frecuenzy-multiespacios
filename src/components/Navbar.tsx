@@ -19,11 +19,11 @@ export default function Navbar() {
     { href: '/bodas', label: 'Bodas', icon: 'favorite' },
     { href: '/cumpleanos', label: 'Cumpleaños', icon: 'cake' },
     { href: '/eventos-privados', label: 'Eventos Privados', icon: 'lock' },
-    { href: '/escuela-dj', label: 'Escuela DJ', icon: 'headphones' },
+    { href: '/escuela-dj', label: 'Frequency Talent', icon: 'headphones' },
   ]
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass-effect py-2 shadow-lg border-b border-gray-200 dark:border-gray-800' : 'bg-transparent py-4'
+    <nav className={`fixed w-full z-50 transition-all duration-300 bg-white dark:bg-surface-dark ${scrolled ? 'py-2 shadow-lg border-b border-gray-200 dark:border-gray-800' : 'py-4'
       }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">

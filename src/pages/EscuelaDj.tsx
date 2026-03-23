@@ -5,49 +5,64 @@ import Footer from '../components/Footer'
 const packs = [
     {
         title: 'Iniciación DJ',
-        duration: '10 Horas',
+        duration: '1 Mes',
         level: 'Principiante',
         features: [
             'Conceptos básicos de mezcla',
             'Configuración de equipo',
             'Estructura musical y beats',
             'Software Rekordbox/Serato',
+            '🎁 Primera clase totalmente gratuita',
         ],
         price: 'Consultar',
         popular: false
     },
     {
-        title: 'Perfeccionamiento Pro',
-        duration: '20 Horas',
-        level: 'Intermedio/Avanzado',
+        title: 'Curso Club',
+        duration: 'Formación continua',
+        level: 'Intermedio',
         features: [
-            'Efectología avanzada',
-            'Mezcla armónica',
-            'Técnicas de performance',
+            'Directo a cabina desde el primer día',
+            'Mezcla armónica avanzada',
+            'Técnicas de performance en vivo',
             'Gestión de librería musical',
+            '🎁 Primera clase totalmente gratuita',
         ],
         price: 'Consultar',
         popular: true
     },
     {
-        title: 'Pack Premium Individual',
-        duration: 'Intensivo',
-        level: 'Personalizado',
+        title: 'Curso Pro',
+        duration: '2h × 2 veces/semana',
+        level: 'Avanzado · Pago mensual',
         features: [
-            'Clases 1 a 1 con profesor',
+            'Efectología avanzada',
+            'Sesiones intensivas de 2 horas',
+            'Dos clases por semana',
+            'Preparación para actuaciones profesionales',
+        ],
+        price: 'Consultar',
+        popular: false
+    },
+    {
+        title: 'One to One',
+        duration: 'Personalizado',
+        level: 'Todos los niveles',
+        features: [
+            'Clases individuales con profesor',
             'Uso exclusivo de la sala',
             'Grabación de set profesional',
             'Asesoría de marketing para DJs',
         ],
-        price: 'Consultar',
+        price: 'Presupuesto bajo consulta',
         popular: false
     }
 ]
 
 const equipment = [
-    { name: 'Pioneer CDJ-3000', icon: 'settings_input_component' },
-    { name: 'Pioneer DJM-V10', icon: 'equalizer' },
-    { name: 'Sistemas de Monitorización Pro', icon: 'speaker' },
+    { name: 'Pioneer CDJ (modelo por confirmar)', icon: 'settings_input_component' },
+    { name: 'Mesa de mezclas profesional', icon: 'equalizer' },
+    { name: 'Monitorización profesional', icon: 'speaker' },
     { name: 'Software Rekordbox / Serato', icon: 'laptop' },
 ]
 
@@ -61,7 +76,7 @@ export default function EscuelaDj() {
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/dj_hero_booth.jpg"
-                        alt="Escuela de DJ Sala Frecuenzy"
+                        alt="Frequency Talent — Escuela de DJs"
                         className="w-full h-full object-cover opacity-60"
                     />
                     <div className="absolute inset-0 bg-gradient-to-br from-background-dark via-background-dark/80 to-transparent"></div>
@@ -71,14 +86,19 @@ export default function EscuelaDj() {
                     <div className="max-w-3xl animate-in fade-in slide-in-from-left duration-1000">
                         <h4 className="font-display font-bold text-primary mb-6 text-sm uppercase tracking-[0.4em] flex items-center gap-4">
                             <span className="w-10 h-px bg-primary"></span>
-                            Frecuenzy DJ Lab
+                            Frequency Talent · Escuela de DJs
                         </h4>
                         <h1 className="font-display text-5xl lg:text-8xl font-bold text-white mb-8 leading-tight">
                             Domina la<br /><span className="text-primary italic">cabina</span>
                         </h1>
-                        <p className="font-body text-gray-300 text-lg lg:text-xl mb-12 leading-relaxed max-w-2xl">
+                        <p className="font-body text-gray-300 text-lg lg:text-xl mb-6 leading-relaxed max-w-2xl">
                             Formación profesional en el corazón de la Ribera Navarra. Aprende con tecnología de vanguardia en un entorno de club real.
                         </p>
+                        {/* Primera clase gratis - destacado */}
+                        <div className="bg-primary/20 border border-primary/30 rounded-2xl px-6 py-4 mb-12 inline-flex items-center gap-3 backdrop-blur-sm">
+                            <span className="material-symbols-outlined text-primary text-3xl">redeem</span>
+                            <span className="font-display font-bold text-white text-lg">¡La primera clase es totalmente gratuita!</span>
+                        </div>
                         <div className="flex flex-wrap gap-6">
                             <a
                                 href="#cursos"
@@ -108,7 +128,7 @@ export default function EscuelaDj() {
                                 Mucho más que mezclar canciones
                             </h2>
                             <p className="font-body text-gray-500 dark:text-gray-400 text-lg mb-10 leading-relaxed">
-                                En Frecuenzy DJ Lab no solo enseñamos técnicas; formamos artistas. Nuestro sistema completo te lleva desde los fundamentos básicos hasta el dominio total de la actuación en directo.
+                                En Frequency Talent no solo enseñamos técnicas; formamos artistas. Nuestro sistema completo te lleva desde los fundamentos básicos hasta el dominio total de la actuación en directo. Directo a cabina desde el primer día.
                             </p>
                             <div className="grid grid-cols-2 gap-8">
                                 <div>
@@ -125,7 +145,7 @@ export default function EscuelaDj() {
                             <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-2xl group-hover:bg-primary/30 transition-all duration-500 scale-95 opacity-50"></div>
                             <img
                                 src="/images/dj_mixer_closeup.jpg"
-                                alt="Formación DJ"
+                                alt="Formación DJ — Foto real próximamente"
                                 className="rounded-3xl shadow-2xl border border-gray-100 dark:border-gray-800 relative z-10"
                             />
                         </div>
@@ -140,11 +160,11 @@ export default function EscuelaDj() {
                         <h2 className="font-display text-3xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">Programas de Formación</h2>
                         <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
                         <p className="font-body text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
-                            Elige el pack que mejor se adapte a tus objetivos. Desde iniciación hasta profesionalización.
+                            Elige el programa que mejor se adapte a tus objetivos. Desde iniciación hasta profesionalización.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {packs.map((pack, i) => (
                             <div
                                 key={i}
@@ -160,16 +180,16 @@ export default function EscuelaDj() {
                                     </span>
                                 )}
                                 <div className="mb-8">
-                                    <p className={`text-[10px] font-bold uppercase tracking-widest mb-2 ${pack.popular ? 'text-primary' : 'text-primary'}`}>{pack.level}</p>
-                                    <h3 className="font-display text-3xl font-bold">{pack.title}</h3>
+                                    <p className={`text-[10px] font-bold uppercase tracking-widest mb-2 text-primary`}>{pack.level}</p>
+                                    <h3 className="font-display text-2xl font-bold">{pack.title}</h3>
                                 </div>
-                                <div className={`text-4xl font-display font-bold mb-8 ${pack.popular ? 'text-white' : 'text-gray-900 dark:text-white'}`}>
+                                <div className={`text-3xl font-display font-bold mb-8 ${pack.popular ? 'text-white' : 'text-gray-900 dark:text-white'}`}>
                                     {pack.duration}
                                 </div>
                                 <ul className="space-y-4 mb-12 flex-grow">
                                     {pack.features.map((feature, j) => (
                                         <li key={j} className="flex items-start gap-3">
-                                            <span className={`material-symbols-outlined text-sm ${pack.popular ? 'text-primary' : 'text-primary'}`}>check_circle</span>
+                                            <span className={`material-symbols-outlined text-sm text-primary`}>check_circle</span>
                                             <span className={`font-body text-sm ${pack.popular ? 'text-gray-300' : 'text-gray-500 dark:text-gray-400'}`}>{feature}</span>
                                         </li>
                                     ))}
@@ -197,8 +217,11 @@ export default function EscuelaDj() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
                             <h2 className="font-display text-3xl lg:text-5xl font-bold mb-8 leading-tight">Estándar Industrial de Vanguardia</h2>
-                            <p className="font-body text-gray-400 text-lg mb-12 leading-relaxed">
+                            <p className="font-body text-gray-400 text-lg mb-4 leading-relaxed">
                                 Para ser el mejor, tienes que formarte con lo mejor. Nuestra cabina está equipada con el estándar de los grandes festivales y clubs internacionales.
+                            </p>
+                            <p className="font-body text-primary/70 text-sm mb-12 italic">
+                                * Modelos exactos del equipo pendientes de confirmar con Sergio.
                             </p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 {equipment.map((item, i) => (
@@ -229,7 +252,7 @@ export default function EscuelaDj() {
                     <div className="text-center mb-16">
                         <h2 className="font-display text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-6">¿Preparado para empezar?</h2>
                         <p className="font-body text-gray-500 dark:text-gray-400 text-lg">
-                            Reserva tu sesión informativa o solicita más detalles sobre nuestros packs de formación.
+                            Reserva tu sesión informativa o solicita más detalles sobre nuestros programas de formación.
                         </p>
                     </div>
                     <ContactForm segment="dj" />

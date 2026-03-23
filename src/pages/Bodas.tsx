@@ -7,7 +7,7 @@ import ExtraServices from '../components/ExtraServices'
 const benefits = [
   { icon: 'restaurant', title: 'Libertad de catering', description: 'Elige tu catering favorito o trae el tuyo propio' },
   { icon: 'camera_enhance', title: 'Espacios fotográficos', description: 'Rincones industriales únicos para fotos memorables' },
-  { icon: 'nightlife', title: 'Sin límites de música', description: 'Celebra hasta el amanecer sin restricciones' },
+  { icon: 'security', title: 'Seguridad obligatoria', description: 'Servicio de seguridad profesional incluido en el evento' },
   { icon: 'schedule', title: 'Tu timing', description: 'Organizamos según tus horarios, no los nuestros' },
 ]
 
@@ -17,10 +17,10 @@ const testimonials = [
 ]
 
 const galleryImages = [
-  { src: '/images/wedding_setup.png', alt: 'Configuración mesa de boda' },
-  { src: '/images/venue_interior.png', alt: 'Interior nave industrial' },
-  { src: '/images/gallery_1.png', alt: 'Detalle decoración industrial' },
-  { src: '/images/venue_exterior.png', alt: 'Exterior nave noche' },
+  { src: '/images/wedding_setup.png', alt: 'Configuración mesa de boda — Foto real próximamente' },
+  { src: '/images/venue_interior.png', alt: 'Interior nave industrial — Foto real próximamente' },
+  { src: '/images/gallery_1.png', alt: 'Detalle decoración industrial — Foto real próximamente' },
+  { src: '/images/venue_exterior.png', alt: 'Exterior nave noche — Foto real próximamente' },
 ]
 
 export default function Bodas() {
@@ -48,7 +48,7 @@ export default function Bodas() {
               Tu día,<br />tus reglas
             </h1>
             <p className="font-body text-gray-300 text-lg lg:text-xl mb-10 leading-relaxed max-w-lg">
-              Un espacio industrial-chic donde la libertad es protagonista. Sin ataduras de catering, sin horarios rígidos. Solo tu visión hecha realidad.
+              Un espacio industrial-chic donde la libertad es protagonista. Sonido de alta definición, pantallas para vídeos especiales y seguridad profesional para que tu día sea perfecto.
             </p>
             <div className="flex flex-wrap gap-6">
               <a
@@ -90,6 +90,24 @@ export default function Bodas() {
                 <p className="font-body text-gray-500 dark:text-gray-400 text-sm leading-relaxed px-4">{benefit.description}</p>
               </div>
             ))}
+          </div>
+
+          {/* Important notices */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div className="flex items-start gap-4 p-6 bg-primary/5 rounded-2xl border border-primary/10">
+              <span className="material-symbols-outlined text-primary text-2xl flex-shrink-0">shield</span>
+              <div>
+                <h5 className="font-display font-bold text-gray-900 dark:text-white text-sm mb-1">Seguridad obligatoria</h5>
+                <p className="font-body text-gray-500 dark:text-gray-400 text-xs leading-relaxed">El servicio de seguridad es obligatorio para bodas.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4 p-6 bg-primary/5 rounded-2xl border border-primary/10">
+              <span className="material-symbols-outlined text-primary text-2xl flex-shrink-0">cleaning_services</span>
+              <div>
+                <h5 className="font-display font-bold text-gray-900 dark:text-white text-sm mb-1">Limpieza a presupuesto</h5>
+                <p className="font-body text-gray-500 dark:text-gray-400 text-xs leading-relaxed">El servicio de limpieza se negocia y presupuesta según el evento.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

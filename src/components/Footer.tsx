@@ -12,7 +12,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/salafrecuenzy/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800/50 rounded-lg flex items-center justify-center hover:bg-primary transition-all duration-300 border border-white/5"
@@ -20,7 +20,7 @@ export default function Footer() {
                 <span className="text-[10px] font-bold">IG</span>
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/salafrecuenzy/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800/50 rounded-lg flex items-center justify-center hover:bg-primary transition-all duration-300 border border-white/5"
@@ -36,7 +36,7 @@ export default function Footer() {
               <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/bodas">Bodas</Link></li>
               <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/cumpleanos">Cumpleaños</Link></li>
               <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/eventos-privados">Eventos Privados</Link></li>
-              <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/escuela-dj">Escuela DJ</Link></li>
+              <li><Link className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" to="/escuela-dj">Frequency Talent</Link></li>
               <li><a className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" href="#conocenos">Conócenos</a></li>
             </ul>
           </div>
@@ -50,11 +50,15 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-xl">call</span>
-                <span>666 555 666</span>
+                <a href="tel:+34692918737" className="hover:text-white transition-colors">692 918 737</a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-xl">mail</span>
-                <span>info@salafrecuenzy.es</span>
+                <a href="mailto:info@salafrequency.com" className="hover:text-white transition-colors">info@salafrequency.com</a>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="material-symbols-outlined text-primary text-xl">chat</span>
+                <a href="https://wa.me/34692918737" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp</a>
               </li>
             </ul>
           </div>

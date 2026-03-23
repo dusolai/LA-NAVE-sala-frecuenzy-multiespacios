@@ -3,14 +3,14 @@ import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 
 const specs = [
-    { label: 'Superficie', value: '1.200 m2', icon: 'square_foot' },
-    { label: 'Capacidad', value: '1100 px', icon: 'groups' },
+    { label: 'Superficie', value: '600 + 500 m²', icon: 'square_foot' },
+    { label: 'Capacidad', value: '800+ px', icon: 'groups' },
     { label: 'Altura', value: '8 metros', icon: 'straighten' },
-    { label: 'WIFI', value: '1 Gbps', icon: 'wifi' },
+    { label: 'WIFI', value: 'Alta velocidad', icon: 'wifi' },
 ]
 
 const features = [
-    { icon: 'cake', title: 'Celebración Total', description: 'Celebra tu cumpleaños con total libertad. Tú pones la lista de invitados, nosotros el escenario.' },
+    { icon: 'cake', title: 'Ambiente Industrial', description: 'Celebra tu cumpleaños en un espacio único con carácter industrial. La nave reformada ofrece un escenario incomparable.' },
     { icon: 'celebration', title: 'Decoración Libre', description: 'Personaliza el espacio a tu gusto. Tematiza tu fiesta sin restricciones.' },
     { icon: 'music_video', title: 'Audiovisuales', description: 'Sonido de alta definición y pantallas para tus vídeos más especiales.' },
 ]
@@ -38,7 +38,7 @@ export default function Cumpleanos() {
                             Birthday Celebration
                         </h4>
                         <h1 className="font-display text-5xl lg:text-7xl font-bold text-white mb-8 leading-tight">
-                            Una fiesta<br /><span className="text-primary italic">inolvidable</span>
+                            Ambiente<br /><span className="text-primary italic">Industrial</span>
                         </h1>
                         <p className="font-body text-gray-300 text-lg lg:text-xl mb-12 leading-relaxed max-w-2xl">
                             Celebra tu día especial en la sala multiespacios más icónica de la Ribera Navarra. Espacio, libertad y el mejor ambiente industrial para tu cumpleaños.
@@ -77,7 +77,7 @@ export default function Cumpleanos() {
                                 <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
                                 <img
                                     src="/images/venue_interior.png"
-                                    alt="Fiesta de Cumpleaños"
+                                    alt="Fiesta de Cumpleaños — Foto real próximamente"
                                     className="rounded-3xl shadow-2xl relative z-10 border border-gray-100 dark:border-gray-800"
                                 />
                             </div>
@@ -128,8 +128,8 @@ export default function Cumpleanos() {
                             'Alquiler íntegro del espacio',
                             'Sonido e iluminación profesional',
                             'Opciones de catering flexible',
-                            'Servicio de limpieza incluido',
-                            'WiFi para tus invitados',
+                            'Limpieza (negociable según evento)',
+                            'WiFi de alta velocidad',
                             'Parking privado',
                             'Posibilidad de traer decoración',
                             'Asistencia técnica básica',
