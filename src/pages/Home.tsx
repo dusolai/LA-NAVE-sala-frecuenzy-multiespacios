@@ -14,10 +14,10 @@ const features = [
 ]
 
 const galleryImages = [
-  { src: '/images/venue_exterior.png', alt: 'Fachada Sala Frecuenzy — Foto real próximamente' },
-  { src: '/images/venue_interior.png', alt: 'Espacio Industrial — Foto real próximamente' },
-  { src: '/images/wedding_setup.png', alt: 'Interior Sala Eventos — Foto real próximamente' },
-  { src: '/images/gallery_1.png', alt: 'Detalle Arquitectonico — Foto real próximamente' },
+  { src: '/images/sala_grande.jpg', alt: 'Fachada Sala Frecuenzy' },
+  { src: '/images/sala_pequena.jpg', alt: 'Espacio Industrial' },
+  { src: '/images/salavip.jpg', alt: 'Interior Sala Eventos' },
+  { src: '/images/equipo1.jpg', alt: 'Detalle Arquitectonico' },
 ]
 
 export default function Home() {
@@ -35,9 +35,9 @@ export default function Home() {
             <div className="w-full md:w-1/2 animate-in slide-in-from-left duration-700">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                 <img
-                  alt="Sala Frecuenzy — Foto real próximamente"
+                  src="/images/sala_grande.jpg"
+                  alt="Sala Frecuenzy Multiespacios"
                   className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
-                  src="/images/venue_exterior.png"
                 />
                 <div className="absolute top-6 right-6 bg-white/90 dark:bg-black/80 backdrop-blur px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] text-primary border border-primary/20">
                   Nuestra Historia

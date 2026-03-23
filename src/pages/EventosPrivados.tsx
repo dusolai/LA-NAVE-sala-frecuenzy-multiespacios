@@ -24,7 +24,7 @@ export default function EventosPrivados() {
       <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-background-dark">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/venue_interior.png"
+            src="/images/sala_pequena.jpg"
             alt="Eventos Privados"
             className="w-full h-full object-cover opacity-60"
           />
@@ -76,8 +76,8 @@ export default function EventosPrivados() {
               <div className="relative">
                 <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
                 <img
-                  src="/images/gallery_1.png"
-                  alt="Instalaciones Eventos — Foto real próximamente"
+                  src="/images/equipo1.jpg"
+                  alt="Instalaciones Eventos"
                   className="rounded-3xl shadow-2xl relative z-10 border border-gray-100 dark:border-gray-800"
                 />
               </div>

@@ -24,7 +24,7 @@ export default function Cumpleanos() {
             <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-background-dark">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/images/gallery_1.png"
+                        src="/images/equipo1.jpg"
                         alt="Cumpleaños en Sala Frecuenzy"
                         className="w-full h-full object-cover opacity-60"
                     />
@@ -76,8 +76,8 @@ export default function Cumpleanos() {
                             <div className="relative">
                                 <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
                                 <img
-                                    src="/images/venue_interior.png"
-                                    alt="Fiesta de Cumpleaños — Foto real próximamente"
+                                    src="/images/sala_pequena.jpg"
+                                    alt="Fiesta de Cumpleaños"
                                     className="rounded-3xl shadow-2xl relative z-10 border border-gray-100 dark:border-gray-800"
                                 />
                             </div>
