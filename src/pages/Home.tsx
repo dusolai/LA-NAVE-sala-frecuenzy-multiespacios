@@ -14,10 +14,10 @@ const features = [
 ]
 
 const galleryImages = [
-  { src: '/images/sala_grande.jpg', alt: 'Fachada Sala Frecuenzy' },
-  { src: '/images/sala_pequena.jpg', alt: 'Espacio Industrial' },
-  { src: '/images/salavip.jpg', alt: 'Interior Sala Eventos' },
-  { src: '/images/equipo1.jpg', alt: 'Detalle Arquitectonico' },
+  { src: '/images/sala_grande.jpg?v=2', alt: 'Fachada Sala Frecuenzy' },
+  { src: '/images/sala_pequena.jpg?v=2', alt: 'Espacio Industrial' },
+  { src: '/images/salavip.jpg?v=2', alt: 'Interior Sala Eventos' },
+  { src: '/images/equipo1.jpg?v=2', alt: 'Detalle Arquitectonico' },
 ]
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
             <div className="w-full md:w-1/2 animate-in slide-in-from-left duration-700">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                 <img
-                  src="/images/sala_grande.jpg"
+                  src="/images/sala_grande.jpg?v=2"
                   alt="Sala Frecuenzy Multiespacios"
                   className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
