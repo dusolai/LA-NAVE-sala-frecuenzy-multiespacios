@@ -24,7 +24,7 @@ export default function Cumpleanos() {
             <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-background-dark">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/images/equipo1.jpg?v=2"
+                        src="/images/sala_grande.jpg?v=2"
                         alt="Cumpleaños en Sala Frecuenzy"
                         className="w-full h-full object-cover opacity-60"
                     />

@@ -14,10 +14,10 @@ const features = [
 ]
 
 const galleryImages = [
-  { src: '/images/sala_grande.jpg?v=2', alt: 'Fachada Sala Frecuenzy' },
-  { src: '/images/sala_pequena.jpg?v=2', alt: 'Espacio Industrial' },
-  { src: '/images/salavip.jpg?v=2', alt: 'Interior Sala Eventos' },
-  { src: '/images/equipo1.jpg?v=2', alt: 'Detalle Arquitectonico' },
+  { src: '/images/sala_grande.jpg?v=2', alt: 'Sala Grande — Pista principal' },
+  { src: '/images/sala_pequena.jpg?v=2', alt: 'Sala Pequeña — Bar y zona lounge' },
+  { src: '/images/salavip.jpg?v=2', alt: 'Sala VIP — Zona premium' },
+  { src: '/images/equipo1.jpg?v=2', alt: 'Cabina DJ — Escenario y equipo' },
 ]
 
 export default function Home() {
