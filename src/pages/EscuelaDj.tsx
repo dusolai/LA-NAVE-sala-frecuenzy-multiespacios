@@ -75,7 +75,7 @@ export default function EscuelaDj() {
             <section className="relative min-h-[80vh] flex items-center overflow-hidden bg-background-dark">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/images/equipo1.jpg?v=2"
+                        src="/images/equipo1.jpg?v=3"
                         alt="Frecuenzy Talent — Escuela de DJs"
                         className="w-full h-full object-cover opacity-60"
                     />
@@ -144,7 +144,7 @@ export default function EscuelaDj() {
                         <div className="relative group">
                             <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-2xl group-hover:bg-primary/30 transition-all duration-500 scale-95 opacity-50"></div>
                             <img
-                                src="/images/sala_grande.jpg?v=2"
+                                src="/images/sala_grande.jpg?v=3"
                                 alt="Formación DJ — Foto real próximamente"
                                 className="rounded-3xl shadow-2xl border border-gray-100 dark:border-gray-800 relative z-10"
                             />

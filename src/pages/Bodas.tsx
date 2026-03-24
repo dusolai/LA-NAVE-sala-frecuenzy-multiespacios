@@ -17,10 +17,10 @@ const testimonials = [
 ]
 
 const galleryImages = [
-  { src: '/images/salavip.jpg?v=2', alt: 'Sala VIP — Zona premium' },
-  { src: '/images/sala_grande.jpg?v=2', alt: 'Sala Grande — Pista principal' },
-  { src: '/images/sala_pequena.jpg?v=2', alt: 'Sala Pequeña — Bar y zona lounge' },
-  { src: '/images/equipo1.jpg?v=2', alt: 'Cabina DJ — Escenario y equipo' },
+  { src: '/images/salavip.jpg?v=3', alt: 'Sala VIP — Zona premium' },
+  { src: '/images/sala_grande.jpg?v=3', alt: 'Sala Grande — Pista principal' },
+  { src: '/images/sala_pequena.jpg?v=3', alt: 'Sala Pequeña — Bar y zona lounge' },
+  { src: '/images/equipo1.jpg?v=3', alt: 'Cabina DJ — Escenario y equipo' },
 ]
 
 export default function Bodas() {
@@ -32,7 +32,7 @@ export default function Bodas() {
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/sala_grande.jpg?v=2"
+            src="/images/sala_grande.jpg?v=3"
             alt="Bodas en Sala Frecuenzy"
             className="w-full h-full object-cover"
           />

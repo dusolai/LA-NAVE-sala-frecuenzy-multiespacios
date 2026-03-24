@@ -7,7 +7,7 @@ const segments = [
     description: 'Un día único en un entorno industrial.',
     href: '/bodas',
     icon: 'favorite',
-    image: '/images/salavip.jpg?v=2',
+    image: '/images/salavip.jpg?v=3',
     action: 'Ver detalles',
   },
   {
@@ -16,7 +16,7 @@ const segments = [
     description: 'Celebra tu día con total libertad.',
     href: '/cumpleanos',
     icon: 'cake',
-    image: '/images/sala_pequena.jpg?v=2',
+    image: '/images/sala_pequena.jpg?v=3',
     action: 'Más info',
   },
   {
@@ -25,7 +25,7 @@ const segments = [
     description: 'Privacidad y personalización total.',
     href: '/eventos-privados',
     icon: 'lock',
-    image: '/images/sala_grande.jpg?v=2',
+    image: '/images/sala_grande.jpg?v=3',
     action: 'Más info',
   },
   {
@@ -34,7 +34,7 @@ const segments = [
     description: 'Escuela de DJs — Aprende con los mejores profesionales.',
     href: '/escuela-dj',
     icon: 'headphones',
-    image: '/images/equipo1.jpg?v=2',
+    image: '/images/equipo1.jpg?v=3',
     action: 'Ver cursos',
   },
 ]
@@ -47,7 +47,7 @@ export default function HeroSegmentado() {
           <img
             alt="Sala Frecuenzy Venue Interior"
             className="w-full h-full object-cover opacity-50"
-            src="/images/sala_grande.jpg?v=2"
+            src="/images/sala_grande.jpg?v=3"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
         </div>
